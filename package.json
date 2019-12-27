@@ -1,0 +1,52 @@
+{
+  "name": "tyler-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "@fullcalendar/core": "^4.3.1",
+    "@fullcalendar/daygrid": "^4.3.0",
+    "@fullcalendar/interaction": "^4.3.0",
+    "@fullcalendar/timegrid": "^4.3.0",
+    "axios": "^0.19.0",
+    "crypto": "^1.0.1",
+    "lottie-web": "^5.5.9",
+    "moment": "^2.24.0",
+    "pug": "^2.0.4",
+    "register-service-worker": "^1.6.2",
+    "tiny-cookie": "^2.3.1",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-fullpage.js": "^0.1.4",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "@types/node": "^12.11.2",
+    "@vue/cli-plugin-eslint": "^4.0.5",
+    "@vue/cli-plugin-pwa": "^4.0.5",
+    "@vue/cli-plugin-router": "^4.0.5",
+    "@vue/cli-plugin-typescript": "^4.0.5",
+    "@vue/cli-service": "^4.0.5",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "acorn": "^7.1.0",
+    "compression-webpack-plugin": "^3.0.1",
+    "css-loader": "^3.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "~3.5.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

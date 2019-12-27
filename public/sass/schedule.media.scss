@@ -1,0 +1,600 @@
+@import './account.variable.scss';
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .schedule {
+    width: 99vw;
+  }
+
+  .schedule-background {
+    margin-top: 15vh;
+  }
+
+  .schedule-header {
+    width: 90%;
+    margin-top: -38vh;
+
+    .schedule-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 1%;
+
+      .navigation {
+        width: 30%;
+      }
+
+      .title {
+        .heading {
+          font-size: 1.7rem;
+          line-height: 1.2;
+        }
+
+        p {
+          a {
+            color: $default-white;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+
+            &:hover {
+              color: $default-hover-color;
+            }
+          }
+        }
+      }
+
+      .view {
+        width: 30%;
+      }
+
+      .split {
+        display: block;
+
+        .split-half-right {
+          padding-top: 2%;
+          width: 100%;
+        }
+
+        .split-half-left {
+          padding-top: 2%;
+          width: 100%;
+        }
+
+        .split-half-flush {
+          font-size: 0.75rem;
+
+          a {
+            color: $default-control-label-color;
+
+            &:hover {
+              color: $default-hover-color;
+            }
+          }
+        }
+
+      }
+
+      .form-control {
+        height: 2rem;
+        font-size: .75rem;
+      }
+    }
+  }
+
+  .schedule-body {
+    width: 90%;
+    min-height: calc(30vh - 115px);
+
+    .content {
+
+      .fc-view,
+      .fc-dayGridMonth-view,
+      .fc-dayGrid-view {
+
+        table {
+          .fc-widget-content {
+            .fc-scroller {
+              min-height: 310px;
+              max-height: 310px;
+            }
+          }
+        }
+
+        .fc-content-skeleton {
+          font-size: .675rem;
+        }
+
+        .fc-bg {
+
+          .fc-today,
+          .fc-future,
+          .fc-past {
+            .total {
+              font-size: 30px;
+              margin-top: 4px;
+            }
+          }
+        }
+
+
+      }
+
+      .fc-view-container {
+
+        .fc-timeGridWeek,
+        .fc-timeGrid-week {
+          table {
+            .fc-body {
+              overflow: scroll;
+              -webkit-overflow-scrolling: touch;
+            }
+
+            .fc-widget-content {
+              .fc-scroller {
+                min-height: 310px;
+                max-height: 310px;
+              }
+            }
+          }
+        }
+
+
+      }
+
+      .popup {
+        max-width: 70vw;
+
+        .body {
+          .info {
+            text-align: center;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .schedule-footer {
+    width: 90%;
+    margin-top: 1vh;
+    min-height: calc(15vh - 115px);
+
+    .heading {
+      font-size: .5rem;
+      white-space: nowrap;
+    }
+
+  }
+
+  .fp-controlArrow.fp-prev {
+    left: 6px;
+    max-height: 3vh;
+    max-width: 3vh
+  }
+
+  .fp-controlArrow.fp-next {
+    max-height: 3vh;
+    max-width: 3vh
+  }
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .primary-navigation .menu {
+    right: -4vh;
+  }
+
+  .header-wrapper {
+    top: 0;
+  }
+
+  .schedule-vue {
+    line-height: 1;
+    width: 100%;
+
+
+    .footer-vue {
+      display: none;
+    }
+
+
+    .split {
+      .split-half-right {
+        padding: 0;
+      }
+
+      .split-half-left {
+        padding: 0
+      }
+    }
+  }
+
+  .schedule {
+    width: 99vw;
+    margin-top: 2vh;
+    min-height: unset;
+  }
+
+  .schedule-background {
+    width: 99vw;
+    margin-top: 13vh;
+    min-height: calc(70vh - 115px);
+  }
+
+  .schedule-header {
+    width: 99vw;
+    margin-top: -45vh;
+    min-height: calc(20vh - 115px);
+
+    .form-control {
+      height: 2rem
+    }
+
+    .schedule-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: unset;
+
+      .navigation {
+        width: 30%;
+        font-size: .8rem;
+      }
+
+      .title {
+        width: 40%;
+        margin: auto;
+        display: block;
+
+        .heading {
+          font-size: 1rem;
+        }
+      }
+
+      .view {
+        width: 30%;
+      }
+
+      button {
+        text-align: center;
+      }
+    }
+  }
+
+
+  .schedule-body {
+    line-height: 1;
+
+    .content {
+      padding: 1%;
+
+      .fc-dayGridMonth-view {
+        table {
+          thead {
+            padding: 0 .375% 0 .375%;
+          }
+
+          .fc-widget-content {
+            .fc-scroller {
+              min-height: 190px;
+              max-height: 190px;
+            }
+          }
+        }
+
+        .fc-bg {
+          .total {
+            font-size: 30px;
+            margin-top: 4px;
+          }
+        }
+
+        .fc-content-skeleton {
+          font-size: .675rem;
+        }
+      }
+
+
+      .fc-timeGridWeek {
+        table {
+          thead {
+            padding: 0 .375% 0 .375%;
+          }
+
+          .fc-widget-content {
+            .fc-scroller {
+              min-height: 190px;
+              max-height: 190px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+  .schedule-footer {
+    margin-top: unset;
+  }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .schedule-header {
+    margin-top: -40vh;
+  }
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .primary-navigation .menu {
+    right: -4vh;
+  }
+
+  .header-wrapper {
+    top: 0;
+  }
+
+  .schedule-vue {
+    line-height: 1;
+    width: 100%;
+
+
+    .footer-vue {
+      display: none;
+    }
+
+
+    .split {
+      .split-half-right {
+        padding: 0;
+      }
+
+      .split-half-left {
+        padding: 0
+      }
+    }
+  }
+
+  .schedule {
+    width: 99vw;
+    margin-top: 2vh;
+    min-height: unset;
+  }
+
+  .schedule-background {
+    width: 99vw;
+    margin-top: 13vh;
+    min-height: calc(70vh - 115px);
+  }
+
+  .schedule-header {
+    width: 99vw;
+    margin-top: -45vh;
+    min-height: calc(20vh - 115px);
+
+    .form-control {
+      height: 2rem
+    }
+
+    .schedule-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: unset;
+
+      .navigation {
+        width: 30%;
+        font-size: .8rem;
+      }
+
+      .title {
+        width: 40%;
+        margin: auto;
+        display: block;
+
+        .heading {
+          font-size: 1rem;
+        }
+      }
+
+      .view {
+        width: 30%;
+      }
+
+      button {
+        text-align: center;
+      }
+    }
+  }
+
+
+  .schedule-body {
+    line-height: 1;
+
+    .content {
+      padding: 1%;
+
+      .fc-dayGridMonth-view {
+        table {
+          thead {
+            padding: 0 .375% 0 .375%;
+          }
+
+          .fc-widget-content {
+            .fc-scroller {
+              min-height: 190px;
+              max-height: 190px;
+            }
+          }
+        }
+
+        .fc-bg {
+          .total {
+            font-size: 30px;
+            margin-top: 4px;
+          }
+        }
+
+        .fc-content-skeleton {
+          font-size: .675rem;
+        }
+      }
+
+
+      .fc-timeGridWeek {
+        table {
+          thead {
+            padding: 0 .375% 0 .375%;
+          }
+
+          .fc-widget-content {
+            .fc-scroller {
+              min-height: 190px;
+              max-height: 190px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+  .schedule-footer {
+    margin-top: unset;
+  }
+
+}
+
+/* ----------- ipad mini ----------- */
+// ipad mini
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .schedule-vue {
+    max-width: 97vw;
+  }
+
+
+}
+
+// ipad mini landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+  .schedule-vue {
+    max-width: 97vw;
+  }
+
+  .schedule-background {
+    margin-top: 5vh;
+  }
+
+  .schedule-header {
+    margin-top: -37vh;
+  }
+
+
+}
+
+/* ----------- ipad pro 11  ----------- */
+
+// ipad pro 11 inch landscape
+@media only screen and (min-device-width: 760px) and (max-device-width: 1194px) and (orientation: landscape) {
+
+  .footer-vue {
+    display: block;
+    margin-bottom: -2vh;
+
+    ul.social-links {
+      -webkit-box-pack: center;
+      text-align: center;
+
+    }
+
+    .social {
+      .logo {
+        margin-left: 25px;
+      }
+
+      small {
+        margin-top: 2vh;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (min-device-width: 1300px) and (orientation: landscape) {
+
+  .header-wrapper {
+    margin-top: 8vh;
+  }
+
+  .footer-vue {
+    display: block;
+
+    ul.social-links {
+      -webkit-box-pack: center;
+      text-align: center;
+    }
+
+    .social {
+      .logo {
+        margin-left: 25px;
+      }
+
+      small {
+        margin-top: 1.5vh;
+      }
+    }
+  }
+
+  .schedule-vue {
+    margin-top: -8vh;
+  }
+
+  .schedule-background {
+    margin-top: 20vh;
+  }
+
+  .schedule-body {
+    .content {
+
+      .fc-view,
+      .fc-dayGridMonth-view,
+      .fc-dayGrid-view,
+      .fc-timeGridWeek {
+
+        table {
+          .fc-widget-content {
+            .fc-scroller {
+              min-height: 466.5px;
+              max-height: 466.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .schedule-header {
+    margin-top: -42vh;
+  }
+
+}

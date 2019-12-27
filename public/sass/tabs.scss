@@ -1,0 +1,79 @@
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
+}
+
+.tab-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.tab-label {
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7f7f7f;
+    transition: background 0.1s, color 0.1s;
+}
+
+.tab-label:hover {
+    background: #142c5a;
+    color: #ffffff;
+}
+
+.tab-label:active {
+    background: #ccc;
+}
+
+.tab-input:focus+.tab-label {
+    box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+    z-index: 1;
+}
+
+.tab-input:checked+.tab-label {
+    background: #091f36;
+    color: #ffffff
+}
+
+@media (min-width: 600px) {
+    .tab-label {
+        width: auto;
+    }
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    min-height: 30vh;
+    max-width: 80vw;
+
+}
+
+@media (min-width: 600px) {
+    .panel {
+        order: 99;
+    }
+}
+
+.tab-input:checked+.tab-label+.panel {
+    margin: auto;
+    min-width: 80vw;
+}
+
+.hidden-panel {
+    display: none;
+}
+
+.show-panel {
+    display: block;
+    -webkit-animation-duration: 1.5s;
+
+    animation-duration: 1.5s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+    animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+}

@@ -1,0 +1,382 @@
+@import './account.variable.scss';
+
+
+
+.required-field {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.875rem;
+  color: $default-required-color;
+}
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group>.input-group-append:last-child>.input-group-text:not(:last-child),
+.input-group>.input-group-append:not(:last-child)>.btn,
+.input-group>.input-group-append:not(:last-child)>.input-group-text,
+.input-group>.input-group-prepend>.btn,
+.input-group>.input-group-prepend>.input-group-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-icon-btn {
+  padding-right: 0.5rem;
+  border: none;
+  border-bottom-style: none;
+  border-bottom-width: thin;
+  background: none;
+  color: $default-border-color;
+  border-bottom: 1px solid $default-input-border-color;
+  cursor: pointer;
+  outline-color: $outline-color;
+  border-radius: 0;
+  display: block;
+
+  :hover {
+    color: $default-hover-color;
+  }
+}
+
+.input-group>.custom-select:not(:last-child),
+.input-group>.form-control:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group>.custom-file,
+.input-group>.custom-select,
+.input-group>.form-control,
+.input-group>.form-control-plaintext {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  width: .2vh;
+  margin-bottom: 0;
+}
+
+.input-group-prepend {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
+.input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  width: 100%;
+
+
+  input[type=text]::placeholder,
+  input[type=password]::placeholder {
+    color: $default-white;
+    font-size: x-small;
+    padding: unset;
+  }
+
+  input[type=text]::-webkit-input-placeholder,
+  input[type=password]::-webkit-input-placeholder {
+    color: $default-white;
+    font-size: x-small;
+    padding: unset;
+
+  }
+
+  input[type=text]::-moz-placeholder,
+  input[type=password]::-moz-placeholder {
+    color: $default-white;
+    font-size: x-small;
+    padding: unset;
+  }
+
+  input[type=text]:-ms-input-placeholder,
+  input[type=password]:-ms-input-placeholder {
+    color: $default-white;
+    font-size: x-small;
+    padding: unset;
+  }
+}
+
+.custom-control-input {
+  position: relative;
+  padding-top: 0;
+
+  label {
+    display: block;
+    text-indent: -15px;
+  }
+
+  input {
+    overflow: hidden;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.525rem;
+  padding: 0.375rem 0.75rem;
+  padding-left: 0.9375rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $form-control-color;
+  background-color: $default-white;
+  background-clip: padding-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  border-bottom-color: $default-bottom-border;
+  border-bottom-style: none;
+  border-bottom-width: thin;
+  border-bottom: 0.0525rem solid $default-bottom-border;
+  outline: none;
+
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.submit {
+  padding: 2vh .4vh .5vh .4vh;
+
+  button[type="submit"] {
+    color: $default-white;
+    background-color: $default-invalidated-color;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid $default-passed-color;
+      ;
+    }
+
+  }
+
+  button {
+    outline: none;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid $default-passed-color;
+      ;
+    }
+
+  }
+}
+
+.control-label {
+  padding: 0.625rem 0.875rem;
+  font-size: 0.975rem;
+  font-weight: 400;
+  color: $default-control-label-color;
+  background-color: $default-control-label-bg;
+  text-transform: capitalize;
+}
+
+.input-group-prepend {
+  margin-right: -1px;
+  border-bottom: 1px solid $default-input-border-color;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+form input[type="text"]:hover,
+form input[type="password"]:hover,
+form input[type="date"]:hover,
+form input[type="text"]:focus,
+form input[type="password"]:focus form {
+  border-bottom: 1px solid $input-hover-border-color;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: $input-text-color;
+}
+
+form input[type="date"]:before {
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+
+form input[type="date"]:focus:before,
+form input[type="date"]:valid:before {
+  content: "";
+}
+
+form input[type="text"]::-webkit-input-placeholder,
+form input[type="password"]::-webkit-input-placeholder,
+form input[type="date"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: $default-control-label-color;
+  font-size: smaller;
+  letter-spacing: .3em;
+}
+
+form input[type="text"]::-moz-placeholder,
+form input[type="password"]::-moz-placeholder,
+form input[type="date"]::-webkit-input-placeholder,
+textarea::-moz-placeholder {
+  text-transform: uppercase;
+  color: $default-control-label-color;
+  font-size: smaller;
+  letter-spacing: .3em;
+}
+
+form input[type="text"]:-ms-input-placeholder,
+form input[type="password"]:-ms-input-placeholder,
+form input[type="date"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: $default-control-label-color;
+  font-size: smaller;
+  letter-spacing: .3em;
+}
+
+form input[type="text"]::-ms-input-placeholder,
+form input[type="password"]::-ms-input-placeholder,
+form input[type="date"]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: $default-control-label-color;
+  font-size: smaller;
+  letter-spacing: .3em;
+}
+
+form input[type="text"]::placeholder,
+form input[type="password"]::placeholder,
+form input[type="date"]::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  color: $default-control-label-color;
+  font-size: smaller;
+  letter-spacing: .3em;
+}
+
+.input-group-text {
+  margin: auto;
+  display: block;
+  border: none;
+  background: none;
+
+  .fa {
+    font-size: 16px;
+  }
+
+  .fa-base {
+    color: $default-invalidated-color;
+  }
+
+  .right {
+    border-left: 1px solid $default-input-border-color;
+  }
+
+  .left {
+    border-right: 1px solid $default-input-border-color;
+  }
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .4vh .2vh .4vh .2vh;
+
+  .split-half-right-header {
+
+    padding: inherit;
+    min-width: 50vw;
+    margin: auto;
+  }
+
+  .split-half-left-header {
+    padding: inherit;
+    padding-right: 3vw;
+    padding-left: 0;
+    min-width: 50vw;
+
+  }
+
+  .split-half-right {
+    padding: inherit;
+    width: 50%;
+  }
+
+  .split-half-left {
+    padding: inherit;
+    padding-right: 3vw;
+    padding-left: 0;
+    width: 50%;
+  }
+
+  .parallel {
+    padding: inherit;
+    width: 100%
+  }
+
+  .split-flex-1 {
+    padding: .4vw 0 .4vw .2vh;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .split-third {
+    width: 33vw;
+    padding: .2vh .8vw .2vh .2vw;
+  }
+
+  .split-60 {
+    padding: .4vw 0 .4vw .2vh;
+    width: 60vw;
+  }
+
+  .split-40 {
+    padding: .4vh 0 .4vh 0;
+    width: 40vw
+  }
+
+  .split-third-end {
+    width: 33vw;
+  }
+
+  .split-half-flush {
+    padding: .4vh 0 .4vh 0;
+    width: 50%;
+    color: $default-control-label-color;
+    font-size: 0.875rem;
+    height: 0.875rem;
+
+    a {
+      color: $default-control-label-color;
+
+      &:hover {
+        color: $default-hover-color;
+      }
+    }
+  }
+
+  .split-for-cb {
+    margin: auto;
+    display: block;
+    width: 6%;
+  }
+
+  .split-for-label {
+    margin: auto;
+    display: block;
+    font-size: small;
+    width: 94%;
+  }
+}

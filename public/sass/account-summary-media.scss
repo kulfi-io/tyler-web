@@ -1,0 +1,653 @@
+@media(orientation: portrait) and (max-width: 414px) {
+    .account-summary-background {
+        margin-top: 5vh;
+    }
+
+    .account-summary-header {
+        margin-top: -35vh;
+
+        .heading {
+            line-height: 1;
+        }
+    }
+
+
+    .account-summary-body {
+        margin-top: -2vh;
+
+        .content {
+            form {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .data {
+                overflow-x: auto;
+                max-height: 100px;
+            }
+        }
+
+        .popup {
+            max-width: 70vw;
+        }
+
+    }
+
+    .account-summary-footer {
+        width: 90%;
+        margin-top: 1vh;
+        min-height: calc(15vh - 115px);
+
+        .heading {
+            font-size: .5rem;
+            white-space: nowrap;
+        }
+
+    }
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    .account-summary {
+        .header-wrapper {
+            background: #0b1222;
+            top: 0;
+        }
+    }
+
+    .account-summary-background {
+        margin-top: 20vh;
+    }
+
+    .account-summary-header {
+        margin-top: -35vh;
+
+        .title {
+            .heading {
+                line-height: 1;
+            }
+
+            .greet-sub {
+                font-size: .6rem;
+            }
+        }
+
+        font-size: .8rem;
+    }
+
+
+    .account-summary-body {
+        .content {
+
+            .scheduled {
+                font-size: .8rem;
+            }
+
+
+
+            .results {
+                max-height: 30vh;
+                min-height: 30vh;
+
+                .schedule-list,
+                .user-list,
+                .account-note-list {
+                    padding: unset;
+                    max-height: 15vh;
+                    min-height: 15vh;
+                    font-size: .4rem;
+
+                    .start-date-time {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+            }
+
+            .tab-label {
+                font-size: .8rem
+            }
+
+            .data {
+                padding: 0.525rem;
+                font-size: .7rem;
+            }
+
+            .control-label {
+                font-size: .7rem;
+                padding: 0.525rem;
+            }
+
+            .search-account {
+
+                .user,
+                .meeting {
+                    min-width: 72vw;
+                    max-width: 72vw;
+
+                    #search-account {
+                        padding: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* Portrait */
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+
+
+    .account-summary-background {
+        margin-top: 10vh;
+    }
+
+    .account-summary-header {
+        margin-top: -35vh;
+    }
+
+    .account-summary-body {
+        .content {
+
+            .results {
+                max-height: 30vh;
+                min-height: 30vh;
+
+                .schedule-list,
+                .user-list,
+                .account-note-list {
+                    padding: unset;
+                    max-height: 15vh;
+                    min-height: 15vh;
+                    font-size: .4rem;
+
+                    .start-date-time {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+
+            }
+
+            .popup {
+                max-width: 70vw;
+            }
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) {
+    .account-summary-background {
+        margin-top: 20vh;
+        min-height: calc(70vh - 115px);
+    }
+
+    .account-summary-header {
+        margin-top: -45vh;
+    }
+
+    .account-summary-body {
+        margin-top: -4vh;
+
+
+        .search-account,
+        .search-category {
+            min-width: 77vw;
+            max-width: 77vw;
+
+            .user,
+            .meeting {
+                min-width: 70vw;
+                max-width: 70vw;
+
+                #search-account,
+                #start,
+                #end {
+                    padding: 10px;
+                    font-size: smaller;
+
+                }
+
+
+            }
+        }
+
+        .results {
+            max-height: 30vh;
+            min-height: 30vh;
+
+            .schedule-list,
+            .user-list,
+            .account-note-list {
+                padding: unset;
+                max-height: 25vh;
+                min-height: 25vh;
+                font-size: .5rem;
+
+                .start-date-time {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+            }
+
+        }
+
+
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {}
+
+/* Portrait */
+@media only screen and (min-width: 375px) and (max-height: 812px) and (orientation: portrait) {
+    .account-summary {
+        .header-wrapper {
+            background: $default-background-color;
+        }
+    }
+
+    .account-summary-background {
+        margin-top: 10vh;
+    }
+
+    .account-summary-header {
+        margin-top: -38vh;
+    }
+
+    .account-summary-body {
+        .content {
+            .results {
+                max-height: 20vh;
+                min-height: 20vh;
+
+                .schedule-list,
+                .user-list,
+                .account-note-list {
+                    padding: unset;
+                    max-height: 15vh;
+                    min-height: 15vh;
+                    font-size: .4rem;
+
+                    .start-date-time {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+
+
+            }
+
+            .search-account {
+
+
+                .user,
+                .meeting {
+                    min-width: 64vw;
+                    max-width: 64vw;
+
+                    #search-account,
+                    #start,
+                    #end {
+                        padding: 10px;
+                        font-size: smaller;
+
+                    }
+
+
+                }
+            }
+
+
+            .notes {
+                .scheduled {
+                    max-height: 20vh;
+                    min-height: 20vh;
+
+                    .schedule-list {
+                        padding: unset;
+                        max-height: 15vh;
+                        min-height: 15vh;
+                        font-size: .4rem;
+
+                        .start-date-time {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+
+
+
+            .popup {
+                max-width: 70vw;
+            }
+        }
+
+
+    }
+}
+
+/* Landscape */
+@media only screen and (min-width: 375px) and (max-height: 812px) and (orientation: landscape) {
+    .account-summary-header {
+
+        .title {
+            .heading {
+                line-height: 1;
+            }
+
+            .greet-sub {
+                font-size: .6rem;
+            }
+        }
+
+        font-size: .8rem;
+    }
+
+    .account-summary-body {
+        .content {
+
+            .search-account {
+
+                .user,
+                .meeting {
+                    min-width: 70vw;
+                    max-width: 70vw;
+
+                    #search-account,
+                    #start,
+                    #end {
+                        padding: 10px;
+                        font-size: smaller;
+
+                    }
+
+
+                }
+            }
+
+            .results {
+                max-height: 30vh;
+                min-height: 30vh;
+
+                .schedule-list,
+                .user-list,
+                .account-note-list {
+                    padding: unset;
+                    max-height: 20vh;
+                    min-height: 20vh;
+                    font-size: .5rem;
+
+                    .start-date-time {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}
+
+
+// ipad mini
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .account-summary-body {
+        .content {
+            .search-account {
+
+                .user,
+                .meeting {
+                    min-width: 71vw;
+                }
+            }
+        }
+    }
+
+
+}
+
+// ipad mini landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    .account-summary-background {
+        margin-top: 10vh;
+        min-height: calc(50vh - 115px);
+    }
+
+    .account-summary-header {
+        margin-top: -37vh;
+
+        .title {
+            .heading {
+                line-height: 1.5;
+            }
+
+            .greet-sub {
+                font-size: .8rem;
+            }
+        }
+
+    }
+
+    .account-summary-body {
+        margin-top: -1.5vh;
+
+        .content {
+
+
+            .schedule-list {
+                min-height: 20vh;
+                max-height: 20vh;
+                font-size: .8rem;
+            }
+
+
+
+            .results {
+                max-height: 30vh;
+                min-height: 30vh;
+
+                .schedule-list,
+                .user-list,
+                .account-note-list {
+                    padding: unset;
+                    max-height: 30vh;
+                    min-height: 30vh;
+                    font-size: .8rem;
+
+                    .start-date-time {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+
+            }
+
+            .search-account {
+                font-size: 1rem;
+
+                .user,
+                .meeting {
+                    min-width: 74vw;
+                    max-width: 74vw;
+
+                    #search-account {
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .tab-label {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+// ipad pro 11 inch landscape
+@media only screen and (min-device-width: 760px) and (max-device-width: 1194px) and (orientation: landscape) {
+
+    .account-summary-background {
+        margin-top: 5vh;
+        min-height: calc(50vh - 115px);
+    }
+
+    .account-summary-header {
+        margin-top: -40vh;
+
+        .title {
+            .heading {
+                line-height: 1.5;
+            }
+
+            .greet-sub {
+                font-size: .8rem;
+            }
+        }
+
+    }
+
+    .account-summary-body {
+        margin-top: -1.5vh;
+
+        .content {
+
+
+            .schedule-list {
+                min-height: 20vh;
+                max-height: 20vh;
+                font-size: .8rem;
+            }
+
+            #start,
+            #end {
+                font-size: .8rem;
+            }
+
+            .results {
+                max-height: 30vh;
+                min-height: 30vh;
+
+                .schedule-list,
+                .user-list,
+                .account-note-list {
+                    padding: unset;
+                    max-height: 25vh;
+                    min-height: 25vh;
+                    font-size: .8rem;
+
+                    .start-date-time {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+
+            }
+
+            .search-account {
+                font-size: 1rem;
+
+
+
+                .user,
+                .meeting {
+                    min-width: 74vw;
+                    max-width: 74vw;
+
+                    #search-account {
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .tab-label {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer-vue {
+        display: block;
+        margin-bottom: -2vh;
+
+        ul.social-links {
+            -webkit-box-pack: center;
+            text-align: center;
+
+        }
+
+        .social {
+            .logo {
+                margin-left: 25px;
+            }
+
+            small {
+                margin-top: 1.5vh;
+            }
+        }
+    }
+
+}
+
+// landscape Desktop
+@media screen and (min-device-width: 1300px) and (orientation: landscape) {
+    .account-summary {
+
+
+
+        .account-summary-body {
+            .content {
+                .search-account {
+
+                    .user,
+                    .meeting {
+                        min-width: 76vw;
+                    }
+                }
+            }
+        }
+
+        .footer-vue {
+            display: block;
+
+            ul.social-links {
+                -webkit-box-pack: center;
+                text-align: center;
+            }
+
+            .social {
+                .logo {
+                    margin-left: 25px;
+                }
+
+                small {
+                    margin-top: 1.5vh;
+                }
+            }
+        }
+
+    }
+
+}

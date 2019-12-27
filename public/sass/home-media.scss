@@ -1,0 +1,2213 @@
+@import './account.variable.scss';
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-height: 667px) {
+  .home {
+    .show {
+      width: 15vw;
+      height: 15vh
+    }
+
+    .intro-login-vue {
+      .checkbox label {
+        height: 15px;
+        width: 15px;
+      }
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      background: transparent;
+      font-size: small;
+      padding: unset;
+    }
+
+
+    .text-area {
+      font-size: small;
+      min-height: 20vh;
+      padding-left: unset;
+      padding-right: unset;
+    }
+
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+  $salutation-height: 12vh;
+
+  .footer-vue {
+    line-height: 1;
+  }
+
+  .home {
+
+    .form-group {
+      margin-bottom: .65rem;
+    }
+
+    .intro-vision-vue {
+      .quote {
+
+        blockquote {
+          font-size: .9em;
+        }
+
+        .detail {
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+      max-width: 97%;
+
+
+
+      .content {
+        margin: auto;
+        display: block;
+        width: 97%;
+
+
+        .split {
+          display: block;
+
+          .split-half-left,
+          .split-half-right,
+          .split-60,
+          .split-flex-1,
+          .split-half-flush {
+            width: 100%;
+            padding-left: unset;
+            padding-right: unset;
+
+          }
+
+          .split-half-flush {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            vertical-align: middle;
+
+            .split-for-cb {
+              width: 10%;
+              line-height: 1.5;
+            }
+
+            .split-for-label {
+              width: 90%;
+              color: $default-white;
+              font-size: .7rem;
+            }
+          }
+
+        }
+
+
+        .hidden-left {
+          display: none;
+        }
+
+        .login-banner {
+          margin-top: 5vh;
+
+          .salutation {
+            width: 30vh;
+            margin-bottom: 3vh;
+            max-height: $salutation-height;
+          }
+        }
+
+        .heading {
+          text-indent: 1em;
+          color: $default-white;
+          margin-bottom: 3vh;
+          letter-spacing: .375vh;
+          font-size: small;
+        }
+
+        .submit {
+          padding-left: unset;
+          padding-right: unset;
+
+          button[type="submit"] {
+            color: $default-white;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        .other-info {
+          margin: auto;
+          display: block;
+          text-indent: 1em;
+          line-height: 2;
+          color: $input-text-color;
+          font-weight: 400;
+
+          section {
+
+            margin-left: 4%;
+
+            .title {
+              font-size: 1.4rem;
+              font-weight: 500;
+              letter-spacing: .1em;
+            }
+
+            p {
+              letter-spacing: .04em;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .intro-register-vue {
+      max-width: 100%;
+
+      .content {
+
+        .register-banner {
+          margin-top: 4vh;
+        }
+
+        .hidden-left {
+          display: none;
+        }
+
+        .text-muted {
+
+          small {
+            min-width: 100%;
+            line-height: 1.4;
+          }
+        }
+
+        button {
+          padding: .25%;
+        }
+
+        .heading {
+          text-indent: 1em;
+          font-size: small;
+          display: block;
+        }
+
+        .instructions {
+          font-size: xx-small;
+        }
+
+        .register-banner {
+          .salutation {
+            width: 50vh;
+            margin-bottom: 3vh;
+            max-height: $salutation-height;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .intro-contact-vue {
+      width: 97%;
+
+      .landscape {
+        display: none;
+      }
+
+      .portrait {
+        display: block;
+      }
+
+
+      .form-group {
+        margin-bottom: .25rem;
+      }
+
+      .content {
+
+        width: 97%;
+
+        .contact-banner {
+          margin-top: 10vh;
+        }
+
+        .split {
+          display: block;
+          padding: 0 .2vh .1vh .2vh;
+
+          .split-half-right {
+            width: 100%;
+          }
+
+          .split-half-left {
+            width: 100%;
+          }
+        }
+
+
+
+        .text-area {
+          font-size: small;
+          max-height: 40px;
+        }
+
+        .heading {
+          text-indent: 1em;
+          margin-bottom: 1vh;
+          font-size: small;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        .other-info {
+          text-indent: 1em;
+          line-height: .5;
+
+          section {
+
+            margin-left: 4%;
+
+            .title {
+              font-size: 1rem;
+              letter-spacing: .1em;
+            }
+
+            p {
+              letter-spacing: .04em;
+              font-size: .675rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-height: 667px) and (orientation: landscape) {
+  $vision-wrapper-width: 85vw;
+
+  .home {
+    .form-control {
+      height: 1.85rem;
+      font-size: .875rem;
+    }
+
+    .form-group {
+      margin-bottom: .2rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      background: transparent;
+      font-size: small;
+    }
+
+
+    .intro-home-vue {
+      .top-wrapper {
+        width: 135vh;
+        height: 35vh;
+        margin-top: 1vh;
+      }
+
+      .bottom-wrapper {
+        width: 125vh;
+        height: 55vh;
+      }
+    }
+
+    .intro-vision-vue {
+      max-width: $vision-wrapper-width;
+
+      .people-text {
+        max-width: 65vw;
+      }
+
+      .collage-image {
+        max-width: 40vw;
+      }
+
+      .quote {
+        blockquote {
+          font-size: 0.8rem;
+        }
+
+        .detail {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+
+
+      .content {
+        width: 100%;
+
+        .split {
+          .split-for-cb {
+            line-height: .5;
+            width: 20%;
+          }
+
+          .split-for-label {
+            font-size: smaller;
+            margin-top: 2.5px;
+          }
+
+
+          .split-flex-1 {
+            padding-top: .7vh;
+          }
+        }
+
+
+        .heading {
+          font-size: small;
+        }
+
+        button[type="submit"] {
+          font-size: small;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+      }
+
+    }
+
+    .intro-register-vue {
+
+      .text-muted {
+        .form-text {
+          display: block;
+          margin-top: 0.05rem;
+        }
+      }
+
+      .split {
+        padding: 0 .2vh 0 .2vh;
+
+        .split-right {
+          padding: 0;
+          padding-left: 1vh;
+          width: 50%;
+        }
+
+        .split-left {
+          padding: 0;
+          padding-right: 1vh;
+          width: 50%;
+        }
+      }
+
+      .content {
+        width: 100%;
+
+        .heading {
+          font-size: small;
+          text-align: center;
+        }
+
+        .register-banner {
+          .salutation {
+            margin-bottom: 1vh;
+            width: 35vw;
+            margin-top: 5vh;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        // .submit {
+        //   padding: 0 1vh 0 1vh;
+        // }
+
+      }
+
+    }
+
+    .intro-contact-vue {
+
+      .portrait {
+        display: none;
+      }
+
+      .split {
+        padding: .05vh;
+      }
+
+      .content {
+        height: unset;
+
+        form {
+          padding: .5vh 0 .5vh 0;
+        }
+
+        .contact-banner {
+          max-width: 70vw;
+          margin: auto;
+          margin-top: 8vh;
+        }
+
+        button {
+          padding: .25%;
+        }
+
+        .heading {
+          text-indent: 1em;
+          margin-bottom: 2vh;
+          font-size: small;
+        }
+
+        .landscape {
+          .heading {
+
+            .other-info {
+              section {
+                margin: auto;
+                display: block;
+                padding: 1%;
+
+                .landscape-contact {
+                  text-align: center;
+
+                }
+
+                p {
+                  letter-spacing: 0;
+                  font-size: .8rem;
+                }
+              }
+            }
+
+          }
+        }
+
+
+        button[type="submit"] {
+          font-size: small;
+        }
+
+        .other-info {
+          text-indent: 1em;
+          line-height: .5;
+
+          section {
+
+            margin-left: -2.5vh;
+            margin-top: 5vh;
+
+            .title {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+
+            .landscape-contact {
+              margin: auto;
+              display: block;
+              color: $default-white;
+            }
+
+            p {
+              letter-spacing: .08em;
+              font-size: .775rem;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-vue {
+      right: 10px;
+      left: 10px;
+      bottom: -5px;
+
+      .social small {
+        display: none;
+      }
+    }
+
+  }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-height: 736px) {
+
+  input[type="text"],
+  input[type="password"] {
+    background: transparent;
+    font-size: small;
+  }
+
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="password"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]::-moz-placeholder,
+  input[type="password"]::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]:-ms-input-placeholder,
+  input[type="password"]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]::-ms-input-placeholder,
+  input[type="password"]::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder,
+  textarea::placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+  $salutation-height: 12vh;
+
+  .footer-vue {
+    line-height: 1;
+  }
+
+  .home {
+
+    .form-control {
+      height: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: .65rem;
+    }
+
+    .intro-vision-vue {
+      .quote {
+
+        blockquote {
+          font-size: .9em;
+        }
+
+        .detail {
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+      max-width: 97%;
+
+      .checkbox label {
+        width: 15px;
+        height: 15px;
+        left: 3px;
+        top: 1px;
+
+      }
+
+
+      .content {
+        margin: auto;
+        display: block;
+        width: 97%;
+
+        .split {
+          display: block;
+
+          .split-half-left,
+          .split-half-right,
+          .split-60,
+          .split-flex-1,
+          .split-half-flush {
+            width: 100%;
+            padding-left: unset;
+            padding-right: unset;
+
+          }
+
+          .split-half-flush {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            vertical-align: middle;
+
+            .split-for-cb {
+              width: 10%;
+              line-height: 1.5;
+            }
+
+            .split-for-label {
+              width: 90%;
+              color: $default-white;
+              font-size: .7rem;
+            }
+          }
+
+        }
+
+
+        .hidden-left {
+          display: none;
+        }
+
+        .login-banner {
+
+          .salutation {
+            width: 30vh;
+            margin-bottom: 3vh;
+            max-height: $salutation-height;
+          }
+        }
+
+        .heading {
+          color: $default-white;
+          margin-bottom: 3vh;
+          letter-spacing: .375vh;
+          font-size: small;
+        }
+
+        .submit {
+          padding-left: unset;
+          padding-right: unset;
+
+          button[type="submit"] {
+            color: $default-white;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        .other-info {
+          margin: auto;
+          display: block;
+          text-indent: 1em;
+          line-height: 2;
+          color: $input-text-color;
+          font-weight: 400;
+
+          section {
+
+            margin-left: 4%;
+
+            .title {
+              font-size: 1.4rem;
+              font-weight: 500;
+              letter-spacing: .1em;
+            }
+
+            p {
+              letter-spacing: .04em;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .intro-register-vue {
+      max-width: 100%;
+
+      .content {
+
+        .register-banner {
+          .salutation {
+            width: 50vh;
+            margin-bottom: 3vh;
+            max-height: $salutation-height;
+          }
+        }
+
+
+        .hidden-left {
+          display: none;
+        }
+
+        .text-muted {
+
+          small {
+            min-width: 100%;
+            line-height: 1.4;
+          }
+        }
+
+        button {
+          padding: .25%;
+        }
+
+        .heading {
+          letter-spacing: .375vh;
+          font-size: x-small;
+          display: block;
+          margin: auto;
+          margin-bottom: 3vh;
+          text-align: center;
+
+        }
+
+        .instructions {
+          font-size: xx-small;
+        }
+
+
+        .fa {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .intro-contact-vue {
+      width: 97%;
+
+      .content {
+        width: 97%;
+
+        .split {
+          display: block;
+
+          .split-half-right {
+            width: 100%;
+          }
+
+          .split-half-left {
+            width: 100%;
+          }
+        }
+
+        input[type="text"],
+        input[type="password"] {
+          background: transparent;
+          font-size: small;
+        }
+
+
+
+        input[type="text"]::-webkit-input-placeholder,
+        input[type="password"]::-webkit-input-placeholder {
+          color: $default-sub-text;
+          font-size: xx-small;
+        }
+
+
+
+        input[type="text"]::-moz-placeholder,
+        input[type="password"]::-moz-placeholder {
+          color: $default-sub-text;
+          font-size: xx-small;
+        }
+
+
+
+        input[type="text"]:-ms-input-placeholder,
+        input[type="password"]:-ms-input-placeholder {
+          color: $default-sub-text;
+          font-size: xx-small;
+        }
+
+
+
+        input[type="text"]::-ms-input-placeholder,
+        input[type="password"]::-ms-input-placeholder {
+          color: $default-sub-text;
+          font-size: xx-small;
+        }
+
+
+
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+          color: $default-sub-text;
+          font-size: xx-small;
+        }
+
+        .text-area {
+          font-size: small;
+          max-height: 150px;
+        }
+
+        .heading {
+          text-indent: 1em;
+          margin-bottom: 2vh;
+          font-size: small;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        .other-info {
+          text-indent: 1em;
+          line-height: .5;
+
+          section {
+
+            margin-left: 4%;
+
+            .title {
+              font-size: 1rem;
+              letter-spacing: .1em;
+            }
+
+            p {
+              letter-spacing: .04em;
+              font-size: .675rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  $vision-wrapper-width: 85vw;
+
+  .home {
+    .form-control {
+      height: 1.85rem;
+      font-size: .875rem;
+    }
+
+    .form-group {
+      margin-bottom: .2rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      background: transparent;
+      font-size: small;
+    }
+
+
+    .intro-home-vue {
+      .top-wrapper {
+        width: 135vh;
+        height: 35vh;
+        margin-top: 1vh;
+      }
+
+      .bottom-wrapper {
+        width: 125vh;
+        height: 55vh;
+      }
+    }
+
+    .intro-vision-vue {
+      max-width: $vision-wrapper-width;
+
+      .people-text {
+        max-width: 65vw;
+      }
+
+      .collage-image {
+        max-width: 40vw;
+      }
+
+      .quote {
+        blockquote {
+          font-size: 0.8rem;
+        }
+
+        .detail {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+
+
+      .content {
+        width: 100%;
+
+        .split {
+          .split-for-cb {
+            line-height: .5;
+            width: 20%;
+          }
+
+          .split-for-label {
+            font-size: smaller;
+            margin-top: 2.5px;
+          }
+
+
+          .split-flex-1 {
+            padding-top: .7vh;
+          }
+        }
+
+
+        .heading {
+          font-size: small;
+        }
+
+        button[type="submit"] {
+          font-size: small;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+      }
+
+    }
+
+    .intro-register-vue {
+
+      .text-muted {
+        .form-text {
+          display: block;
+          margin-top: 0.05rem;
+        }
+      }
+
+      .split {
+        padding: 0 .2vh 0 .2vh;
+
+        .split-right {
+          padding: 0;
+          padding-left: 1vh;
+          width: 50%;
+        }
+
+        .split-left {
+          padding: 0;
+          padding-right: 1vh;
+          width: 50%;
+        }
+      }
+
+      .content {
+        width: 100%;
+
+        .heading {
+          font-size: small;
+          text-align: center;
+        }
+
+        .register-banner {
+          .salutation {
+            margin-bottom: 1vh;
+            width: 35vw;
+            margin-top: 5vh;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        // .submit {
+        //   padding: 0 1vh 0 1vh;
+        // }
+
+      }
+
+    }
+
+    .intro-contact-vue {
+
+      .portrait {
+        display: none;
+      }
+
+      .split {
+        padding: .05vh;
+      }
+
+      .content {
+        height: unset;
+
+        form {
+          padding: .5vh 0 .5vh 0;
+        }
+
+        .contact-banner {
+          max-width: 70vw;
+          margin: auto;
+          margin-top: 8vh;
+        }
+
+        button {
+          padding: .25%;
+        }
+
+        .heading {
+          text-indent: 1em;
+          margin-bottom: 2vh;
+          font-size: small;
+        }
+
+        .landscape {
+          .heading {
+
+            .other-info {
+              section {
+                margin: auto;
+                display: block;
+                padding: 1%;
+
+                .landscape-contact {
+                  text-align: center;
+
+                }
+
+                p {
+                  letter-spacing: 0;
+                  font-size: .8rem;
+                }
+              }
+            }
+
+          }
+        }
+
+
+        button[type="submit"] {
+          font-size: small;
+        }
+
+        .other-info {
+          text-indent: 1em;
+          line-height: .5;
+
+          section {
+
+            margin-left: -2.5vh;
+            margin-top: 5vh;
+
+            .title {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+
+            .landscape-contact {
+              margin: auto;
+              display: block;
+              color: $default-white;
+            }
+
+            p {
+              letter-spacing: .08em;
+              font-size: .775rem;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-vue {
+      right: 10px;
+      left: 10px;
+      bottom: -5px;
+
+      .social small {
+        display: none;
+      }
+    }
+
+  }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+  .home {
+    .show {
+      width: 15vw;
+      height: 15vh
+    }
+  }
+
+  input[type="text"] {
+    background: transparent;
+    font-size: small;
+    padding: unset;
+  }
+
+  input[type="password"] {
+    background: transparent;
+    font-size: small;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="password"]::-webkit-input-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]::-moz-placeholder,
+  input[type="password"]::-moz-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]:-ms-input-placeholder,
+  input[type="password"]:-ms-input-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]::-ms-input-placeholder,
+  input[type="password"]::-ms-input-placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: $default-sub-text;
+    font-size: xx-small;
+  }
+
+
+  button[type="submit"] {
+    font-size: small;
+  }
+
+  .text-area {
+    font-size: small;
+    min-height: 20vh;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  $salutation-height: 12vh;
+
+  .home {
+
+    .form-control {
+      height: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: .65rem;
+    }
+
+    .intro-vision-vue {
+      .quote {
+        blockquote {
+          font-size: 1em;
+        }
+
+        .detail {
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+      max-width: 97%;
+
+      .content {
+        margin: auto;
+        display: block;
+        width: 97%;
+
+        .split {
+          display: block;
+
+          .split-half-left,
+          .split-half-right,
+          .split-60,
+          .split-flex-1,
+          .split-half-flush {
+            width: 100%;
+            padding-left: unset;
+            padding-right: unset;
+
+          }
+
+          .split-half-flush {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            vertical-align: middle;
+
+            .split-for-cb {
+              width: 10%;
+              line-height: 1.5;
+            }
+
+            .split-for-label {
+              width: 90%;
+              color: $default-white;
+              font-size: .7rem;
+            }
+          }
+
+        }
+
+
+        .hidden-left {
+          display: none;
+        }
+
+        .login-banner {
+
+          .salutation {
+            width: 30vh;
+            margin-bottom: 3vh;
+            max-height: $salutation-height;
+          }
+        }
+
+        .heading {
+          color: $default-white;
+          margin-bottom: 3vh;
+          letter-spacing: .375vh;
+          font-size: small;
+        }
+
+        .submit {
+          padding-left: unset;
+          padding-right: unset;
+
+          button[type="submit"] {
+            color: $default-white;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        .other-info {
+          margin: auto;
+          display: block;
+          text-indent: 1em;
+          line-height: 2;
+          color: $input-text-color;
+          font-weight: 400;
+
+          section {
+
+            margin-left: 4%;
+
+            .title {
+              font-size: 1.4rem;
+              font-weight: 500;
+              letter-spacing: .1em;
+            }
+
+            p {
+              letter-spacing: .04em;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .intro-register-vue {
+      max-width: 100%;
+
+      .content {
+
+        .hidden-left {
+          display: none;
+        }
+
+        .text-muted {
+
+          small {
+            min-width: 100%;
+            line-height: 1.4;
+          }
+        }
+
+        button {
+          padding: .25%;
+        }
+
+        .heading {
+          font-size: small;
+          display: block;
+          margin: auto;
+          margin-bottom: 3vh;
+        }
+
+        .instructions {
+          font-size: xx-small;
+        }
+
+        .register-banner {
+          .salutation {
+            width: 50vh;
+            margin-bottom: 3vh;
+            max-height: $salutation-height;
+          }
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .intro-contact-vue {
+      width: 97%;
+
+      .content {
+        width: 97%;
+        height: unset;
+
+        .split {
+          display: block;
+
+          .split-half-right {
+            width: 100%;
+          }
+
+          .split-half-left {
+            width: 100%;
+          }
+        }
+
+        .text-area {
+          font-size: small;
+          max-height: 185px;
+        }
+
+        .heading {
+          text-indent: 1em;
+          margin-bottom: 2vh;
+          font-size: small;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        .other-info {
+          text-indent: 1em;
+          line-height: .5;
+
+          section {
+
+            margin-left: 4%;
+
+            .title {
+              font-size: 1rem;
+              letter-spacing: .1em;
+            }
+
+            p {
+              letter-spacing: .04em;
+              font-size: .675rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  $vision-wrapper-width: 85vw;
+
+  .home {
+
+    .form-group {
+      margin-bottom: .2rem;
+    }
+
+    .form-control {
+      height: 2rem;
+      padding: .25%;
+      font-size: .875rem;
+    }
+
+    .intro-home-vue {
+      margin: auto;
+      display: block;
+      padding: unset;
+
+      .top-wrapper {
+        width: 75vw;
+        height: 30vh;
+        margin-top: -8vh;
+      }
+
+      .bottom-wrapper {
+        width: 70vw;
+        height: 50vh;
+        margin-top: 5vh;
+      }
+    }
+
+    .intro-vision-vue {
+      max-width: unset;
+
+      .people-text {
+        max-width: 65vw;
+        margin-top: 8vh;
+
+      }
+
+      .collage-image {
+        max-width: 49vw;
+        max-height: 40vh;
+      }
+
+      .quote {
+        blockquote {
+          font-size: 0.9rem;
+        }
+
+        .detail {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+
+      .split {
+        .split-for-cb {
+          line-height: .5;
+          width: 20%;
+        }
+
+        .split-for-label {
+          font-size: smaller;
+          margin-top: 2.5px;
+        }
+
+
+        .split-flex-1 {
+          padding-top: .7vh;
+        }
+      }
+
+      .content {
+        width: 100%;
+
+        .heading {
+          font-size: small;
+        }
+
+
+        // input[type="text"],
+        // input[type="password"] {
+        //   background: transparent;
+        //   font-size: small;
+        // }
+
+        // input[type="text"]::-webkit-input-placeholder,
+        // input[type="password"]::-webkit-input-placeholder,
+        // textarea::-webkit-input-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]::-moz-placeholder,
+        // input[type="password"]::-moz-placeholder,
+        // textarea::-moz-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]:-ms-input-placeholder,
+        // input[type="password"]:-ms-input-placeholder,
+        // textarea:-ms-input-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]::-ms-input-placeholder,
+        // input[type="password"]::-ms-input-placeholder,
+        // textarea::-ms-input-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]::placeholder,
+        // input[type="password"]::placeholder,
+        // textarea::placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        button[type="submit"] {
+          font-size: small;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+      }
+
+    }
+
+    .intro-register-vue {
+      .split {
+        padding: .05vh;
+      }
+
+
+      .submit {
+        padding-top: 1vh;
+      }
+
+      .text-muted {
+        .form-text {
+          font-size: x-small;
+        }
+      }
+
+      .instructions {
+
+        .split {
+          padding: .1vh;
+
+          .split-right {
+            padding: 0;
+            padding-left: 1vh;
+            width: 50%;
+          }
+
+          .split-left {
+            padding: 0;
+            padding-right: 1vh;
+            width: 50%;
+          }
+        }
+      }
+
+      .content {
+        width: 100%;
+
+        .heading {
+          font-size: small;
+          text-align: center;
+        }
+
+        .register-banner {
+          .salutation {
+            margin-bottom: .5vh;
+            width: 38vw;
+
+          }
+        }
+
+        .submit {
+          padding: unset;
+        }
+
+        .fa {
+          font-size: 10px;
+        }
+
+        // input[type="text"],
+        // input[type="password"] {
+        //   background: transparent;
+        //   font-size: small;
+        // }
+
+        // input[type="text"]::-webkit-input-placeholder,
+        // input[type="password"]::-webkit-input-placeholder,
+        // textarea::-webkit-input-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]::-moz-placeholder,
+        // input[type="password"]::-moz-placeholder,
+        // textarea::-moz-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]:-ms-input-placeholder,
+        // input[type="password"]:-ms-input-placeholder,
+        // textarea:-ms-input-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]::-ms-input-placeholder,
+        // input[type="password"]::-ms-input-placeholder,
+        // textarea::-ms-input-placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        // input[type="text"]::placeholder,
+        // input[type="password"]::placeholder,
+        // textarea::placeholder {
+        //   color: $default-sub-text;
+        //   font-size: xx-small;
+        // }
+
+        button[type="submit"] {
+          font-size: small;
+        }
+
+
+      }
+
+    }
+
+    .intro-contact-vue {
+      .split {
+        padding: .05vh;
+      }
+
+      .content {
+        height: 80vh;
+
+        form {
+          padding: .5vh 0 .5vh 0;
+        }
+
+        .contact-banner {
+          margin-top: 10vh;
+          max-height: 18vh;
+        }
+
+
+        button {
+          padding: .25%;
+        }
+
+        .heading {
+          text-indent: 1em;
+          margin-bottom: 2vh;
+          font-size: small;
+        }
+
+        .landscape {
+          .heading {
+
+            .other-info {
+              section {
+                margin: auto;
+                display: block;
+                padding: 1%;
+
+                .landscape-contact {
+                  text-align: center;
+
+                }
+              }
+            }
+
+
+          }
+        }
+
+
+        .other-info {
+          text-indent: 1em;
+          line-height: .5;
+
+          section {
+
+            margin-left: -2.5vh;
+
+            .title {
+              font-size: 1rem;
+              font-weight: 500;
+              letter-spacing: 1em;
+            }
+
+            .landscape-contact {
+              margin: auto;
+              display: block;
+              color: $default-white;
+            }
+
+            p {
+              letter-spacing: .08em;
+              font-size: .775rem;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-vue {
+      right: 10px;
+      left: 10px;
+      bottom: -5px;
+
+      .social small {
+        display: none;
+      }
+    }
+
+  }
+
+}
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home {
+
+
+    .show {
+      width: 15vw;
+      height: 15vh
+    }
+
+    .intro-login-vue {
+      .checkbox label {
+        height: 15px;
+        width: 15px;
+      }
+
+      .split {
+        .split-for-label {
+          margin-top: 3.5px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+  }
+
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+  .home {
+
+    .intro-login-vue {
+      .content {
+        .split {
+          .split-flex-1 {
+            padding-top: 1.69vh;
+            padding: .4vh 0 .4vh .0;
+          }
+        }
+      }
+    }
+
+    .intro-contact-vue {
+      .content {
+        .other-info {
+          section {
+            .title {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .home {
+
+    .form-control {
+      height: 2.525rem;
+      line-height: 1.5;
+      margin-bottom: unset;
+
+    }
+
+
+    .intro-home-vue {
+      line-height: 1.5;
+
+      .top-wrapper {
+        max-height: 45vh;
+        min-width: 100%;
+      }
+
+      .bottom-wrapper {
+        max-height: 55vh;
+        min-width: 100%;
+      }
+    }
+
+    .intro-vision-vue {
+
+      .people-text {
+        max-width: 70vw;
+      }
+
+      .collage-image {
+        max-width: 65vw;
+      }
+
+      .quote {
+
+        .detail {
+          font-size: 0.6em;
+        }
+      }
+    }
+
+    .intro-login-vue {
+      .content {
+        width: 95%;
+
+        .heading {
+          font-size: unset;
+          text-align: unset;
+        }
+
+        .split {
+          padding: unset;
+        }
+
+      }
+    }
+
+    .intro-register-vue {
+      .content {
+        width: 95%;
+
+        .register-banner {
+          max-width: unset;
+
+          .salutation {
+            margin-bottom: 10vh;
+            width: 35vw;
+            margin-top: 5vh;
+          }
+        }
+
+        .heading {
+          font-size: unset;
+          text-align: unset;
+        }
+
+        .split {
+          padding: unset;
+        }
+
+
+      }
+    }
+
+    .intro-contact-vue {
+
+
+
+      .split {
+        padding: unset;
+      }
+
+
+      .content {
+        width: 95%;
+
+        .contact-banner {
+          max-width: unset;
+        }
+
+        .heading {
+          font-size: unset;
+          margin-bottom: 4vh;
+        }
+
+        .landscape {
+          .heading {
+            .other-info {
+              section {
+                margin-left: unset;
+                text-align: center;
+
+                p {
+                  letter-spacing: .04em;
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-vue {
+      left: 20px;
+
+      #footer-vue {
+        right: 10px;
+        left: 10px;
+      }
+    }
+
+  }
+}
+
+/* ----------- iPad pro 11 inch ----------- */
+
+/* Portrait  */
+@media only screen and (min-device-width: 760px) and (max-device-width: 1194px) and (orientation: portrait) {
+  .home {
+
+
+    .show {
+      width: 15vw;
+      height: 15vh
+    }
+
+
+
+    .intro-login-vue {
+      .checkbox label {
+        height: 15px;
+        width: 15px;
+      }
+
+      .split {
+        .split-for-label {
+          margin-top: 3.5px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+// landscape
+@media only screen and (min-device-width: 760px) and (max-device-width: 1194px) and (orientation: landscape) {
+  .home {
+
+
+    .show {
+      width: 15vw;
+      height: 15vh
+    }
+
+
+    .intro-home-vue {
+
+      .top-wrapper {
+        max-height: 45vh;
+        min-width: 100%;
+        margin-top: -10vh;
+      }
+
+      .bottom-wrapper {
+        max-height: 55vh;
+        min-width: 100%;
+      }
+    }
+
+    .intro-login-vue {
+      .checkbox label {
+        height: 15px;
+        width: 15px;
+      }
+
+      .split {
+        .split-for-label {
+          margin-top: 3.5px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .footer-vue {
+      display: block;
+      margin-bottom: -2vh;
+
+      ul.social-links {
+        -webkit-box-pack: center;
+        text-align: center;
+
+      }
+
+      .social {
+        .logo {
+          margin-left: 25px;
+        }
+
+        small {
+          margin-top: 2vh;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1300px) and (orientation: landscape) {
+
+  .header-wrapper {
+    max-height: 4vh;
+  }
+
+  .home {
+
+    .intro-home-vue {
+      line-height: 1.5;
+
+      .top-wrapper {
+        max-height: 45vh;
+        min-width: 100vw;
+
+        .top-banner {
+          margin: auto;
+          display: block;
+          width: 90%;
+          margin-top: -15vh;
+        }
+      }
+
+      .bottom-wrapper {
+        max-height: 55vh;
+        min-width: 100%;
+
+        .bottom-banner {
+          margin: auto;
+          display: block;
+          width: 90%;
+          margin-top: -5vh;
+        }
+      }
+    }
+
+    .intro-vision-vue {
+
+      .people-text {
+        max-width: 70vw;
+      }
+
+      .collage-image {
+        max-width: 70vw;
+      }
+
+      .quote {
+
+        .detail {
+          font-size: 0.6em;
+        }
+      }
+    }
+
+    .intro-contact-vue {
+      .content {
+
+        .contact-banner {
+          margin: auto;
+          display: block;
+
+          .salutation {
+            margin: auto;
+            display: block;
+            width: 150vh;
+          }
+        }
+
+        .note-vue {
+          margin: auto;
+          display: block;
+          width: 150vh;
+
+        }
+
+        .other-info section {
+          margin: auto;
+          display: block;
+          text-align: center;
+
+          p {
+            letter-spacing: .45em;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .footer-vue {
+      display: block;
+
+      ul.social-links {
+        -webkit-box-pack: center;
+        text-align: center;
+      }
+
+      .social {
+        .logo {
+          margin-left: 25px;
+        }
+
+        small {
+          margin-top: 1.5vh;
+        }
+      }
+    }
+  }
+
+}

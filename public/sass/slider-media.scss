@@ -1,0 +1,44 @@
+@media(orientation: portrait) and (max-width: 414px) {
+    .slider {
+        .container {
+            max-height: 30vh;
+
+            .box-minmax {
+                font-size: unset;
+            }
+
+            .range-slider {
+                .bullet {
+                    min-width: 30vw;
+                    padding: 1%;
+                    height: unset;
+                    left: unset;
+                    margin-top: unset;
+                    font-size: 1.5em;
+                }
+
+                .range-line {
+                    margin: auto;
+                    display: block;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+
+    .slider .container .range-slider {
+
+        .decrease .increase,
+        .bullet {
+            height: unset;
+            width: unset;
+        }
+
+    }
+
+}

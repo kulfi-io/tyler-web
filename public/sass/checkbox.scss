@@ -1,0 +1,55 @@
+@import "./account.variable.scss";
+
+.checkbox {
+  position: relative;
+  color: $default-white;
+}
+
+.checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 3px;
+  top: 3px;
+  border-radius: 4px;
+
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, .4);
+
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, .4);
+
+  background: $text-muted;
+}
+
+.checkbox label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  background: transparent;
+  top: 2.5px;
+  left: 2.5px;
+  border: 1px solid $default-white;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox label:hover::after {
+  opacity: 0.3;
+}
+
+.checkbox input[type=checkbox] {
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.checkbox input[type=checkbox]:checked+label:after {
+  opacity: 1;
+}
+
+@import "./checkbox-media.scss";

@@ -1,0 +1,45 @@
+@media(orientation: portrait) and (max-width: 414px) {
+    .send-note {
+        .send-note-background {
+            margin-top: 10vh;
+        }
+
+        .send-note-header {
+            margin-top: -38vh;
+        }
+
+
+        .send-note-header {
+            line-height: 1;
+        }
+
+        .send-note-body {
+            margin-top: -2vh;
+
+            .content {
+                form {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                .text-area {
+                    min-height: 100px;
+                    max-height: 100px;
+                }
+            }
+
+        }
+
+        .send-note-footer {
+            width: 90%;
+            margin-top: 1vh;
+            min-height: calc(15vh - 115px);
+
+            .heading {
+                font-size: .5rem;
+                white-space: nowrap;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,227 @@
+@import './account.variable.scss';
+
+.account-vue {
+  margin: auto;
+  display: block;
+
+  @import './account.helper.scss';
+
+  .fp-slidesNav {
+    margin: auto;
+    display: block;
+    position: relative;
+    top: -10vh;
+    text-align: center;
+
+    ul {
+      li {
+        margin-right: 40px;
+      }
+    }
+
+    ul li a span {
+      background: $default-input-border-color;
+    }
+  }
+
+  .fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    opacity: .8;
+    border-width: 18.5px 14px 18.5px 0;
+    border-color: transparent $default-input-border-color transparent transparent;
+
+    &:hover {
+      border-color: transparent $default-background-color transparent transparent;
+    }
+  }
+
+  .fp-controlArrow.fp-next {
+    right: 15px;
+    opacity: .8;
+    border-width: 18.5px 0 18.5px 14px;
+    border-color: transparent transparent transparent $default-input-border-color;
+
+    &:hover {
+      border-color: transparent transparent transparent $default-background-color;
+    }
+
+  }
+
+
+  .form-group-login {
+    margin-bottom: 0.5rem;
+  }
+
+
+  .instructions {
+    .split {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      .split-right {
+        padding: 0;
+        padding-left: 1%;
+        width: 50%;
+      }
+
+      .split-left {
+        padding: 0;
+        padding-right: 1%;
+        width: 50%;
+      }
+    }
+
+    .passed {
+      color: $default-passed-color;
+    }
+
+    .failed {
+      color: $default-failed-color;
+    }
+  }
+}
+
+.account {
+  margin: auto;
+  display: block;
+  background: $background-dusk-gradient;
+  width: 90%;
+  margin-top: unset;
+  min-height: calc(50vh - 115px);
+}
+
+.info {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 85%;
+  margin-top: 2vh;
+  bottom: 10px;
+  margin-left: 10%;
+  color: $notification-color;
+  text-transform: uppercase;
+  font-size: 0.775rem;
+
+  .info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    opacity: 0;
+  }
+
+  .info-list-hidden {
+    visibility: hidden;
+  }
+}
+
+.account-header {
+  margin: auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  background: $default-background-color;
+  width: 85%;
+  margin-top: -43vh;
+  min-height: calc(20vh - 115px);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+  .login,
+  .reset {
+    letter-spacing: 1rem;
+  }
+
+  .forgot-password,
+  .change-password {
+    letter-spacing: 0.775rem;
+  }
+
+  .title {
+    color: $default-white;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    .heading {
+      margin: auto;
+      display: block;
+      font-family: Montserrat, serif;
+      font-size: 1.6875rem;
+      font-weight: 600;
+      line-height: 1.5555555556;
+    }
+
+    p {
+      padding-bottom: 2%;
+      font-size: 1rem;
+      color: $default-sub-text;
+      color: $default-white;
+      letter-spacing: 0.3rem;
+      text-transform: none;
+
+      a {
+        color: $default-white;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+
+        &:hover {
+          color: $default-hover-color;
+        }
+      }
+    }
+  }
+}
+
+.account-body {
+  margin: auto;
+  display: block;
+  position: relative;
+  background: $default-body-background;
+  width: 85%;
+  margin-top: 5vh;
+  min-height: calc(35vh - 115px);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+  .content {
+    padding: 2%;
+
+    .control-label {
+      display: none;
+    }
+  }
+
+  .text-muted {
+    color: $text-muted;
+
+    .form-text {
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    small {
+      min-width: 100%;
+    }
+  }
+}
+
+.account-footer {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 85%;
+  margin-top: 2vh;
+  min-height: calc(15vh - 115px);
+
+  .required-field {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    color: $default-required-color;
+    text-indent: 1.5em;
+  }
+}
+
+@import './account.media.scss';

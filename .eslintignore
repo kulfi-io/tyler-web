@@ -1,0 +1,5 @@
+src/components/**/*.vue
+src/library/*.ts
+src/microservices/*.ts
+src/views/*.vue
+

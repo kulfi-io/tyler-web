@@ -1,0 +1,475 @@
+@import "./account.variable.scss";
+
+.schedule-appointment {
+  color: $default-white;
+  font-family: inherit;
+  font-size: inherit;
+  margin: auto;
+  display: block;
+  line-height: 1.5;
+
+  -webkit-animation-duration: 1s;
+
+  animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+  animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+
+}
+
+.schedule-vue {
+  margin: auto;
+  display: block;
+  background: $default-background-color;
+
+  input[type="text"],
+  input[type="password"] {
+    background: transparent;
+    outline: none;
+    text-indent: 10px;
+  }
+
+  .text-area {
+    text-indent: 10px;
+  }
+
+
+  // @import "./account.helper.scss";
+  line-height: 1.5;
+
+  .form-control {
+    letter-spacing: .1em;
+  }
+
+}
+
+.schedule-background {
+  margin: auto;
+  display: block;
+  background: $background-dusk-gradient;
+  max-width: 90vw;
+  min-height: calc(50vh - 115px);
+
+}
+
+.schedule-header {
+  margin: auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  background: $default-header-background-color;
+  max-width: 85vw;
+  margin-top: -43vh;
+  min-height: calc(10vh - 115px);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+  .schedule-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1%;
+
+    .navigation {
+      width: 30%;
+    }
+
+    .title {
+      color: $default-white;
+      font-weight: 400;
+      text-transform: uppercase;
+      width: 40%;
+
+      .heading {
+        margin: auto;
+        display: block;
+        font-family: Montserrat, serif;
+        font-size: 1.6875rem;
+        font-weight: inherit;
+        line-height: 1.5;
+      }
+
+      p {
+        padding-bottom: 2%;
+        font-size: 1rem;
+        color: $default-sub-text;
+        color: $default-white;
+        letter-spacing: 0.3em;
+        text-transform: none;
+
+        a {
+          color: $default-white;
+          text-transform: uppercase;
+          letter-spacing: 0.3em;
+
+          &:hover,
+          &:focus {
+            color: $default-hover-color;
+          }
+        }
+      }
+    }
+
+    .view {
+      width: 30%;
+    }
+
+    .form-control {
+      color: $default-white;
+      background-color: $default-header-background-color;
+      border-bottom: none;
+      text-transform: uppercase;
+      text-align: center;
+
+      &:hover,
+      &:focus {
+        border-bottom: 0.0525rem solid $default-input-border-color;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: $default-hover-color;
+      }
+
+      &.active {
+        border-bottom: 0.0525rem solid $default-input-border-color;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: $input-text-color;
+      }
+    }
+  }
+}
+
+.schedule-body {
+  margin: auto;
+  display: block;
+  position: relative;
+  background: $background-dusk-gradient;
+  max-width: 85vw;
+  min-height: calc(35vh - 115px);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+  .content {
+
+    padding: 2%;
+    margin: auto;
+    display: block;
+    position: relative;
+    background: $background-dusk-gradient;
+
+
+    .control-label {
+      display: none;
+    }
+
+    @import "./calendar.scss";
+
+    .schedule-popup {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .schedule-cancel-popup {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .schedule-popup-display {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: auto;
+      display: block;
+      border: 5px solid $default-white;
+      padding: 1%;
+      background: $default-header-background-color;
+      border-radius: 1px;
+      position: relative;
+      -webkit-transition: all 5s ease-in-out;
+      -o-transition: all 5s ease-in-out;
+      transition: all 5s ease-in-out;
+      max-width: 35vw;
+
+      .title {
+        text-align: center;
+        color: $default-white;
+        letter-spacing: .2em;
+        font-size: 1rem;
+      }
+
+      .body {
+        .link {
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: $default-hover-color;
+          }
+        }
+
+        .link-last {
+          text-align: right;
+        }
+
+        .info {
+          text-align: left;
+          line-height: 1.5;
+          color: $default-font-color;
+          font-size: .8rem;
+          text-transform: none;
+        }
+
+        .status {
+          color: $default-white;
+        }
+
+        .heading {
+          color: $default-read-more;
+          margin-bottom: 4vh;
+          font-size: .75rem;
+          text-transform: uppercase;
+          letter-spacing: .3em;
+          white-space: nowrap;
+        }
+      }
+
+    }
+
+    .fc-timeGridWeek-view,
+    .fc-timeGrid-view {
+
+      .reserved {
+        background: $calendar-reserved-color;
+        border-color: $calendar-reserved-color;
+      }
+
+      .past-date {
+        background: $calendar-past-date-color;
+        border-color: $calendar-past-date-color;
+      }
+
+      .total {
+        display: none;
+      }
+
+      .fc-scroller,
+      .fc-time-grid-container {
+        background-color: transparent;
+
+        .fc-time-grid .fc-slats td {
+          background-color: transparent;
+        }
+
+        .fc-time-grid {
+          height: inherit;
+          background-color: transparent;
+
+          .fc-slats,
+          .fc-bg {
+            max-height: inherit;
+            height: inherit;
+            background-color: inherit;
+
+            table {
+              background-color: inherit;
+            }
+          }
+
+          .fc-content-skeleton {
+            height: 59vh;
+            max-height: 59vh;
+            background-color: inherit;
+
+            table {
+              height: inherit;
+              background-color: inherit;
+
+              tbody {
+                tr {
+                  .fc-axis {
+                    height: 0;
+                  }
+
+
+                  td {
+                    .fc-content-col {
+                      height: 59vh;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .fc-divider {
+      display: none;
+    }
+
+    .fc-dayGridMonth-view {
+      .fc-day-grid-container {
+        max-height: 59vh;
+
+
+        .fc-day-grid {
+          .fc-row {
+            max-height: calc(59vh / 6);
+          }
+        }
+      }
+
+      .fc-past {
+        background: $calendar-past-date-color;
+        border-color: $default-white;
+
+        .total {
+          font-size: 50px;
+          opacity: .3;
+          text-align: center;
+        }
+
+      }
+
+
+      .fc-future {
+        background: $calendar-fc-future-bg-day;
+
+        .total {
+          font-size: 50px;
+          opacity: .6;
+          text-align: center;
+        }
+      }
+
+      .fc-bg {
+        .fc-today {
+          background: $calendar-fc-today-bg-day-grid;
+
+          .total {
+            font-size: 50px;
+            opacity: .8;
+            text-align: center;
+          }
+        }
+
+
+      }
+
+      .fc-content-skeleton {
+        table {
+          tr {
+            .fc-event-container {
+              opacity: .4;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .fc-time-grid-container {
+      height: inherit;
+      max-height: 59vh;
+
+
+
+      .fc-time-grid {
+        height: inherit;
+
+        .fc-content-override {
+          background: $calendar-fc-content-bg-time-item;
+        }
+
+
+        .fc-bg {
+          .fc-today {
+            background: $calendar-fc-today-bg-time-grid;
+
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .text-muted {
+    color: $text-muted;
+
+    .form-text {
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    small {
+      min-width: 100%;
+    }
+  }
+
+
+}
+
+.schedule-footer {
+  margin: auto;
+  position: relative;
+  max-width: 85vw;
+  margin-top: 2vh;
+  min-height: calc(15vh - 115px);
+
+  .link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $default-hover-color;
+    }
+  }
+
+  .link-last {
+    text-align: right;
+  }
+
+  .heading {
+    color: $default-read-more;
+    margin-bottom: 4vh;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+
+  .required-field {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    color: $default-required-color;
+    text-indent: 1.5em;
+  }
+}
+
+@import "../sass/schedule.media.scss";

@@ -1,0 +1,166 @@
+{
+  "secret": "tyler-cmt-services",
+  "port": 3001,
+  "host": "tyler.kulfi.io",
+  "title": "tyler-web",
+  "cookie": {
+    "secret": "cookie-secret",
+    "name": "tyler-cmt",
+    "expiration": {
+      "duration": [
+        {
+          "name": "min",
+          "value": "20m"
+        },
+        {
+          "name": "sec",
+          "value": "1200s"
+        },
+        {
+          "name": "hour",
+          "value": "1h"
+        },
+        {
+          "name": "day",
+          "value": "1D"
+        },
+        {
+          "name": "month",
+          "value": "1M"
+        },
+        {
+          "name": "year",
+          "value": "1Y"
+        }
+      ],
+      "selected": "min"
+    }
+  },
+  "fullpage": {
+    "key": "002D6FD2-0EC343D4-9403ACA4-CB7CDBFB"
+  },
+  "defaultApptMessage": {
+    "title": "Schedule appointment with",
+    "location": "333 Sutter Street SF CA 94109"
+  },
+  "range": {
+    "min": 10,
+    "max": 24
+  },
+  "microservices": {
+    "overrideProd": true,
+    "services": [
+      {
+        "name": "account",
+        "scheme": "https",
+        "baseEndpoint": "tyler.api.kulfi.io",
+        "devBaseEndpoint": "127.0.0.1",
+        "port": 3001,
+        "endpoints": [
+          {
+            "name": "user",
+            "endpoint": "v1/user"
+          },
+          {
+            "name": "login",
+            "endpoint": "v1/login"
+          },
+          {
+            "name": "verify",
+            "endpoint": "v1/verify"
+          },
+          {
+            "name": "register",
+            "endpoint": "v1/register"
+          },
+          {
+            "name": "resetRequest",
+            "endpoint": "v1/reset-request"
+          },
+          {
+            "name": "reset",
+            "endpoint": "v1/reset"
+          },
+          {
+            "name": "account-note",
+            "endpoint": "v1/admin/account-note"
+          },
+          {
+            "name": "search",
+            "endpoint": "v1/admin/search"
+          },
+          {
+            "name": "userList",
+            "endpoint": "v1/admin/user-list"
+          }
+        ]
+      },
+      {
+        "name": "mailer",
+        "scheme": "https",
+        "baseEndpoint": "tyler.mailer.kulfi.io",
+        "devBaseEndpoint": "127.0.0.1",
+        "port": 3003,
+        "endpoints": [
+          {
+            "name": "note",
+            "endpoint": "v1/note"
+          },
+          {
+            "name": "resetRequest",
+            "endpoint": "v1/reset-request"
+          },
+          {
+            "name": "register",
+            "endpoint": "v1/register"
+          }
+        ]
+      },
+      {
+        "name": "calendar",
+        "scheme": "https",
+        "baseEndpoint": "tyler.calendar.kulfi.io",
+        "devBaseEndpoint": "127.0.0.1",
+        "port": 3002,
+        "endpoints": [
+          {
+            "name": "events",
+            "endpoint": "v1/events"
+          },
+          {
+            "name": "event",
+            "endpoint": "v1/event"
+          },
+          {
+            "name": "events-by-date",
+            "endpoint": "v1/events-by-date"
+          },
+          {
+            "name": "events-by-user",
+            "endpoint": "v1/events-by-user"
+          },
+          {
+            "name": "events-by-targets",
+            "endpoint": "v1/events-by-targets"
+          },
+          {
+            "name": "scheduled-events",
+            "endpoint": "v1/events-scheduled"
+          },
+          {
+            "name": "event-search",
+            "endpoint": "v1/event-search"
+          }
+        ]
+      }
+    ]
+  },
+  "header": {
+    "Accept": "application/json; charset=utf-8",
+    "Content-Type": "application/json; charset=utf-8",
+    "enctype": "application/x-www-form-urlencoded",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+    "x_access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkOTM5ZmUxY2EwZjUwMTA5NWI5YzJhZCIsImFkZHJlc3MiOiIxMjcuMC4wLjEiLCJleHAiOjE3NDQ3NDMwMDkyNTUsImlhdCI6MTU2OTk1NTgwOX0.qwqTb80mBI7SIOi3hJo-I0ptXPcS4it34ggY8OeOQbo"
+  }
+}

@@ -1,0 +1,214 @@
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .appointment {
+        .appointment-background {
+            margin-top: 10vh;
+        }
+
+        .appointment-header {
+            margin-top: -35vh;
+        }
+
+        .appointment-body {
+            .content {
+                form {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                .popup {
+                    max-width: 70vw;
+
+                    .info {
+                        text-align: center;
+                    }
+                }
+
+                .text-area {
+                    min-height: 100px;
+                    max-height: 100px;
+                }
+            }
+
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .appointment {
+        line-height: 1;
+        margin: auto;
+        display: block;
+
+        .appointment-background {
+            margin-top: 13vh;
+            min-height: calc(70vh - 115px);
+        }
+
+        .appointment-header {
+            display: none;
+        }
+
+        .appointment-body {
+            margin-top: -47vh;
+
+            .controller {
+                display: flex;
+
+                button {
+                    min-height: 95%;
+                    min-width: 95%;
+
+                }
+            }
+
+
+            .text-area {
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .appointment {
+
+        .appointment-background {
+            margin-top: 10vh;
+            min-height: calc(70vh - 115px);
+        }
+
+
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .appointment {
+
+        .appointment-background {
+            margin-top: 10vh;
+            min-height: calc(70vh - 115px);
+        }
+
+        .appointment-header {
+            margin-top: -57vh;
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .appointment {
+        line-height: 1;
+        margin: auto;
+        display: block;
+
+        .appointment-background {
+            margin-top: 14vh;
+            min-height: calc(70vh - 115px);
+        }
+
+        .appointment-header {
+            margin-top: -42vh;
+            display: none;
+
+            .title {
+
+                .heading {
+                    line-height: 1;
+                    font-size: 1rem;
+                }
+
+                .greet {
+                    font-size: 1rem;
+                    padding-bottom: .25%;
+                }
+
+                .greet-sub {
+                    display: none;
+                }
+
+
+                p {
+                    padding-bottom: .25%;
+                }
+            }
+        }
+
+        .appointment-body {
+            margin-top: -47vh;
+
+            .controller {
+                display: flex;
+
+                button {
+                    min-height: 100%;
+                    min-width: 100%;
+
+                }
+            }
+
+
+            .text-area {
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+// ipad mini
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .appointment {
+        max-width: 97vw;
+    }
+
+}
+
+// ipad mini landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    .appointment {
+        max-width: 97vw;
+    }
+
+    .appointment-background {
+        margin-top: 5vh;
+    }
+
+    .appointment-header {
+        margin-top: -37vh;
+    }
+
+
+}
+
+// landscape desktop
+@media screen and (min-device-width: 1300px) and (orientation: landscape) {
+
+    .appointment-background {
+        margin-top: 20vh;
+    }
+}

@@ -1,0 +1,186 @@
+.slider {
+    .container {
+        padding: 1%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 1%;
+
+        .box-minmax {
+            min-width: 76vw;
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-top: 2px;
+
+            .split-half-right {
+                text-align: right;
+            }
+        }
+
+
+        .range-slider {
+            margin: auto;
+            display: block;
+
+            .info {
+               text-align: center;
+               color: #FFFFFF;
+            }
+
+            .fa {
+                font-size: 25px;
+                cursor: pointer;
+            }
+            .fa:hover {
+                color: #ca002e;
+                cursor: pointer;
+            }
+
+            .increase, .decrease {
+
+                margin: auto;
+                display: block;
+                width: 85px;
+                height: 60px;
+                background: transparent;
+                line-height: 30px;
+                text-align: center;
+                color: #ffffff;
+                font-style: normal;
+                font-weight: normal;
+                line-height: normal;
+            }
+
+            .decrease {
+                .close {
+                    position: relative;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .range-line {
+            margin-top: 25px;
+            min-width: 100%;
+            height: 3px;
+            -webkit-appearance: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 1px;
+                cursor: pointer;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: #ffffff;
+                border-radius: 0px;
+                border: 0px solid #010101;
+            }
+
+            &::-moz-range-track {
+                width: 100%;
+                height: 1px;
+                cursor: pointer;
+                box-shadow: none;
+                background: #ffffff;
+                border-radius: 0px;
+                border: 0px solid #010101;
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border: 0px solid #ffffff;
+                -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+                height: 22px;
+                width: 22px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 1);
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: -20px;
+            }
+
+            &::-moz-range-thumb {
+                box-shadow: none;
+                border: 0px solid #ffffff;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+                height: 22px;
+                width: 22px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 1);
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: -20px;
+            }
+
+            &::-moz-focus-outer {
+                border: 0;
+            }
+
+            &.reserved {
+
+                &::-moz-range-thumb {
+                    background: #9d9d9d;
+                }
+
+                &::-webkit-slider-thumb {
+                    background: #9d9d9d;
+                }
+            }
+        }
+
+        .bullet,
+        .availability {
+
+            margin: auto;
+            display: block;
+            width: 85px;
+            height: 60px;
+            background: transparent;
+            border-radius: 3%;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 5px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 2px solid #fff;
+            margin-top: 10px;
+            color: #ffffff;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 20px;
+            left: 33vw;
+
+            &::after {
+                content: "";
+                display: block;
+                font-size: 20px;
+                letter-spacing: 0.07em;
+                margin-top: -2px;
+            }
+        }
+
+        .availability {
+            border: none;
+            font-size: .9rem;
+            line-height: unset;
+            height: unset;
+            text-transform: capitalize;
+        }
+
+        .reserved {
+            color: #9d9d9d;
+        }
+
+
+    }
+}
+
+@import './slider-media.scss';

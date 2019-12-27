@@ -1,0 +1,467 @@
+@import "./account.variable.scss";
+@import "./checkbox.scss";
+@import "./account.helper.scss";
+
+
+.account-summary-vue {
+    color: $default-white;
+    font-family: inherit;
+    font-size: inherit;
+    margin: auto;
+    display: block;
+    line-height: 1.5;
+
+    -webkit-animation-duration: 1s;
+
+    animation-duration: 1s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+    animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+
+
+}
+
+.account-summary-background {
+
+    margin: auto;
+    display: block;
+    background: $background-dusk-gradient;
+    max-width: 90vw;
+    min-height: calc(50vh - 115px);
+    margin-top: 10vh;
+
+}
+
+// @import "./account.helper.scss";
+
+.account-summary-header {
+    margin: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    background: $default-header-background-color;
+    max-width: 85vw;
+    margin-top: -43vh;
+    min-height: calc(10vh - 115px);
+    -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+    .title {
+        color: $default-white;
+        font-weight: 600;
+
+        .heading {
+            margin: auto;
+            display: block;
+            font-family: Montserrat, serif;
+            font-size: 1.6875rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $default-sub-text;
+            letter-spacing: 0.3rem;
+            text-transform: none;
+        }
+
+        .greet {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .greet-sub {
+            font-size: .8rem;
+            font-weight: 300;
+        }
+    }
+}
+
+.account-summary-body {
+    margin: auto;
+    display: block;
+    position: relative;
+    max-width: 85vw;
+    min-height: calc(35vh - 115px);
+    -webkit-box-shadow: 0 2px 7px 0 rgba(26, 13, 13, 0.18),
+        0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18),
+        0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    margin-top: -1.5vh;
+    font-size: .8rem;
+    padding: 10px;
+
+    .content {
+        @import './tabs.scss';
+
+        .hide {
+            display: none;
+        }
+
+        .impersonate {
+            color: $default-control-label-color;
+        }
+
+        .impersonate-reset {
+            color: $default-white;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: $default-hover-color;
+            }
+        }
+
+        input[type="text"],
+        input[type="date"] {
+
+            background: transparent;
+            outline: none;
+
+
+            &:hover,
+            &:focus {
+                border-bottom: 1px solid $input-hover-border-color;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                color: $input-text-color;
+            }
+
+            &::-webkit-input-placeholder {
+                text-transform: uppercase;
+                color: $default-control-label-color;
+                font-size: smaller;
+                letter-spacing: .3em;
+            }
+
+            &::-moz-placeholder {
+                text-transform: uppercase;
+                color: $default-control-label-color;
+                font-size: smaller;
+                letter-spacing: .3em;
+            }
+
+            &:-ms-input-placeholder {
+                text-transform: uppercase;
+                color: $default-control-label-color;
+                font-size: smaller;
+                letter-spacing: .3em;
+            }
+
+            &::-ms-input-placeholder {
+                text-transform: uppercase;
+                color: $default-control-label-color;
+                font-size: smaller;
+                letter-spacing: .3em;
+            }
+
+            &::placeholder {
+                text-transform: uppercase;
+                color: $default-control-label-color;
+                font-size: smaller;
+                letter-spacing: .3em;
+            }
+
+
+        }
+
+
+        .input-group-prepend {
+            border-bottom: unset;
+        }
+
+        .input-group {
+            .datetime-input-box-wrapper {
+                min-width: 45vw;
+            }
+
+        }
+
+        .input-group-text:hover {
+            color: $default-white;
+        }
+
+        .search-account {
+
+            .user,
+            .meeting {
+                min-width: 73.5vw;
+            }
+
+        }
+
+        .fa:hover,
+        .fa:focus {
+            color: $default-white;
+            cursor: pointer;
+        }
+
+        .search-category {
+            text-align: right;
+
+            .cat-label {
+                padding: 10px 20px;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 12px;
+                color: #7f7f7f;
+            }
+        }
+
+        .results {
+            min-height: 43vh;
+            padding: 0.525rem 0.875rem;
+
+            .schedule-list,
+            .user-list {
+                max-height: 38vh;
+            }
+
+        }
+
+
+        margin: auto;
+        display: block;
+        position: relative;
+        background: $background-dusk-gradient;
+        padding: 1%;
+
+        .control-label {
+            line-height: 1;
+            font-size: .8rem;
+            padding: 0.525rem 0.875rem;
+            background: transparent;
+            color: $default-white;
+            letter-spacing: 0.1rem;
+        }
+
+        .data {
+            padding: 0.525rem 0.875rem;
+            border-bottom: .5px solid $default-sub-text;
+        }
+
+        .scheduled {
+            border-bottom: .5px solid $default-sub-text;
+        }
+
+        .schedule-list,
+        .user-list,
+        .account-note-list {
+            padding: 0.525rem 0.875rem;
+            max-height: 30vh;
+            min-height: 30vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            font-size: .7rem;
+
+
+            li {
+                padding-left: 5px;
+            }
+
+            .location,
+            .email {
+                color: $default-font-color;
+            }
+
+
+        }
+
+        .notes {
+            padding-top: 1%;
+        }
+
+
+        .bg-muted {
+            background: $text-muted;
+        }
+
+        .bg-passed {
+            background: $default-passed-color;
+        }
+
+        .text-area {
+            background: transparent;
+            max-height: 35vh;
+            min-height: 35vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            color: $default-white;
+
+
+            &:focus,
+            &:hover {
+                border-bottom: .0525rem solid $default-input-border-color;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                color: $input-text-color;
+                outline: none;
+            }
+
+            &:empty:before {
+                content: attr(data-text);
+                color: $default-white;
+                font-size: x-small;
+                text-transform: uppercase;
+                letter-spacing: .4em;
+            }
+        }
+
+        .split {
+            .split-third-end {
+                display: block;
+
+                .view {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .text-muted {
+            color: $text-muted;
+
+            .form-text {
+                display: block;
+                margin-top: 0.25rem;
+            }
+
+            small {
+                min-width: 100%;
+            }
+        }
+
+        .heading {
+            color: $default-white;
+            margin-bottom: 4vh;
+            letter-spacing: .05em;
+        }
+
+        .meeting-view-popup,
+        .meeting-note-popup {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            -webkit-transition: opacity 500ms;
+            -o-transition: opacity 500ms;
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 2;
+
+            .split-half-right {
+                text-align: right;
+            }
+        }
+
+        .meeting-display {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: auto;
+            display: block;
+            border: 5px solid $default-white;
+            padding: 1%;
+            background: $default-header-background-color;
+            border-radius: 1px;
+            position: relative;
+            -webkit-transition: all 5s ease-in-out;
+            -o-transition: all 5s ease-in-out;
+            transition: all 5s ease-in-out;
+            max-width: 55vw;
+
+            .title {
+                text-align: center;
+                color: $default-white;
+                letter-spacing: .2em;
+                font-size: 1rem;
+            }
+
+            .body {
+                .link {
+                    color: $default-white;
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                        color: $default-hover-color;
+                    }
+                }
+
+                .link-last {
+                    text-align: right;
+                }
+
+                .info {
+                    text-align: left;
+                    line-height: 1.5;
+                    color: $default-font-color;
+                    font-size: .8rem;
+                    text-transform: none;
+                }
+
+                .status {
+                    color: $default-white;
+                }
+
+                .heading {
+                    color: $default-read-more;
+                    margin-bottom: 4vh;
+                    font-size: .75rem;
+                    text-transform: uppercase;
+                    letter-spacing: .3em;
+                    white-space: nowrap;
+                }
+            }
+
+        }
+
+
+
+        .schedule-cancel-popup {
+            display: none;
+        }
+
+
+    }
+}
+
+.account-summary-footer {
+    margin: auto;
+    position: relative;
+    max-width: 85vw;
+    margin-top: 2vh;
+    min-height: calc(15vh - 115px);
+
+    .link {
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            color: $default-hover-color;
+        }
+    }
+
+    .link-last {
+        text-align: right;
+    }
+
+    .heading {
+        color: $default-read-more;
+        margin-bottom: 4vh;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+    }
+}
+
+@import "./account-summary-media.scss";

@@ -1,0 +1,332 @@
+@import "./account.variable.scss";
+@import "./checkbox.scss";
+@import "./account.helper.scss";
+
+
+.appointment {
+  margin: auto;
+  display: block;
+
+  line-height: 1.5;
+
+}
+
+.appointment-background {
+  margin: auto;
+  display: block;
+  background: $background-dusk-gradient;
+  max-width: 90vw;
+  min-height: calc(50vh - 115px);
+}
+
+.appointment-header {
+  margin: auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  background: $default-header-background-color;
+  max-width: 85vw;
+  margin-top: -43vh;
+  min-height: calc(10vh - 115px);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+  .title {
+    color: $default-white;
+    font-weight: 600;
+
+    .heading {
+      margin: auto;
+      display: block;
+      font-family: Montserrat, serif;
+      font-size: 1.6875rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    p {
+      padding-bottom: 2%;
+      font-size: 1rem;
+      color: $default-sub-text;
+      letter-spacing: 0.3rem;
+      text-transform: none;
+    }
+
+    .greet {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    .greet-sub {
+      font-size: .8rem;
+      font-weight: 300;
+    }
+  }
+
+}
+
+.appointment-body {
+  margin: auto;
+  display: block;
+  position: relative;
+  max-width: 85vw;
+  min-height: calc(35vh - 115px);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  margin-top: -1.5vh;
+  font-size: .8rem;
+  padding: 10px;
+
+  .content {
+    margin: auto;
+    display: block;
+    position: relative;
+    background: $background-dusk-gradient;
+
+    .validation-error {
+      border: 1px solid red;
+    }
+
+    .control-label {
+      display: none;
+    }
+
+    .data {
+      padding: 0.525rem 0.875rem;
+    }
+
+    .appt-popup {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .appt-popup-display {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: auto;
+      display: block;
+      border: 5px solid $default-white;
+      padding: 1%;
+      background: $default-background-color;
+      border-radius: 1px;
+      position: relative;
+      -webkit-transition: all 5s ease-in-out;
+      -o-transition: all 5s ease-in-out;
+      transition: all 5s ease-in-out;
+      max-width: 35vw;
+
+      .title {
+        text-align: center;
+        color: $default-white;
+        letter-spacing: .2em;
+        font-size: 1rem;
+      }
+
+
+
+      .body {
+        .link {
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: $default-hover-color;
+          }
+        }
+
+        .link-last {
+          text-align: right;
+        }
+
+        .info {
+          text-align: left;
+          line-height: 1.5;
+          color: $default-font-color;
+          font-size: .8rem;
+          text-transform: none;
+        }
+
+        .heading {
+          color: $default-read-more;
+          margin-bottom: 4vh;
+          font-size: .75rem;
+          text-transform: uppercase;
+          letter-spacing: .3em;
+          white-space: nowrap;
+        }
+
+        .status {
+          color: $default-white;
+        }
+
+      }
+
+    }
+
+    .text-muted {
+      color: $text-muted;
+
+      .form-text {
+        display: block;
+        margin-top: 0.25rem;
+      }
+
+      small {
+        min-width: 100%;
+      }
+    }
+
+    .submit {
+
+      button[type="submit"] {
+        color: $default-white;
+        font-weight: unset;
+      }
+    }
+
+    .bg-muted {
+      background: $text-muted;
+    }
+
+    .bg-passed {
+      background: $default-passed-color;
+    }
+
+    .text-area {
+      color: $default-sub-text;
+      background: transparent;
+      min-height: 115px;
+      max-height: 115px;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+
+      &:focus,
+      &:hover {
+        border-bottom: .0525rem solid $default-input-border-color;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: $input-text-color;
+        outline: none;
+      }
+
+
+      &:empty:before {
+        content: attr(data-text);
+        color: $default-white;
+        font-size: x-small;
+        text-transform: uppercase;
+        letter-spacing: .4em;
+      }
+    }
+
+    input[type="text"] {
+      background: transparent;
+    }
+
+    input[type="text"]::-webkit-input-placeholder {
+      color: $default-white;
+      font-size: x-small;
+    }
+
+    input[type="text"]::-moz-placeholder,
+    .text-area::-moz-placeholder {
+      color: $default-white;
+      font-size: x-small;
+    }
+
+    input[type="text"]:-ms-input-placeholder,
+    .text-area:-ms-input-placeholder {
+      color: $default-white;
+      font-size: x-small;
+    }
+
+    input[type="text"]::-ms-input-placeholder,
+    .text-area::-ms-input-placeholder {
+      color: $default-white;
+      font-size: x-small;
+    }
+
+    input[type="text"]::placeholder,
+    .text-area::placeholder {
+      color: $default-white;
+      font-size: x-small;
+    }
+
+    input[type="text"]:hover,
+    input[type="text"]:focus {
+      border-bottom: 1px solid $input-hover-border-color;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: $input-text-color;
+      outline: none;
+    }
+
+    .fa {
+      font-size: 12px;
+    }
+  }
+
+  -webkit-animation-duration: 1s;
+
+  animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+  animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+
+}
+
+.appointment-footer {
+  font-size: .875rem;
+  margin: auto;
+  position: relative;
+  max-width: 85vw;
+  margin-top: 2vh;
+  min-height: calc(15vh - 115px);
+
+  .link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $default-hover-color;
+    }
+  }
+
+  .link-last {
+    text-align: right;
+  }
+
+  .heading {
+    color: $default-read-more;
+    margin-bottom: 4vh;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+
+  .required-field {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    color: $default-required-color;
+    text-indent: 1.5em;
+  }
+}
+
+@import './appointment-media.scss';

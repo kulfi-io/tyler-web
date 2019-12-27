@@ -1,0 +1,1175 @@
+$vue-detail-header-color: #efefef;
+$vue-detail-header-bg-white: #fff;
+$vue-detail-header-bg-grey: #c8c8c8;
+$blockquote-color: #515769;
+$nav-logo-grey: #515769;
+$default-font-color: #515769;
+$default-background-color:#0b1222;
+$default-header-background-color:#091f36;
+$default-white: #ffffff;
+
+@media (min-width:540px) {
+  form {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  form .fieldset {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  form .field-group,
+  form .legend {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  form .legend {
+    font-size: 1.5rem;
+    line-height: 1.5
+  }
+
+  form label.primary.empty {
+    -webkit-transform: scale(2) translateY(22px);
+    transform: scale(2) translateY(22px)
+  }
+
+  form .style-select .ss-selected-option.primary,
+  form .style-select .ss-selected-option.primary+.style-select .ss-selected-option,
+  form input[type=email].primary,
+  form input[type=email].primary+.style-select .ss-selected-option,
+  form input[type=text].primary,
+  form input[type=text].primary+.style-select .ss-selected-option,
+  form select.primary,
+  form select.primary+.style-select .ss-selected-option,
+  form textarea.primary,
+  form textarea.primary+.style-select .ss-selected-option {
+    font-size: 1.5rem;
+    line-height: 1.5
+  }
+
+  form .error {
+    font-size: .75rem;
+    line-height: 1.5
+  }
+
+  body {
+    font-size: 1.125rem;
+    line-height: 1
+  }
+
+  body>header {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  body>footer a.logo {
+    margin-left: 0;
+    margin-right: 0
+  }
+
+  body>footer .navs {
+    width: auto;
+    min-width: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+  }
+
+  main {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  main>article {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  main>article>.inner {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .primary-navigation .social small br {
+    display: block
+  }
+
+  h1 {
+    font-size: 5.6875rem
+  }
+
+  h2 {
+    font-size: 3.75rem
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 1.6666666667
+  }
+
+  h4 {
+    font-size: 1.6875rem;
+    line-height: 1.5555555556
+  }
+
+  h5 {
+    font-size: 1.5rem
+  }
+
+  h5,
+  small {
+    line-height: 1.5
+  }
+
+  small {
+    font-size: .75rem
+  }
+
+  .nbsp {
+    white-space: nowrap
+  }
+
+  .social {
+    text-align: right
+  }
+
+  .social small br {
+    display: none
+  }
+
+  ul.social-links {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+  }
+}
+
+@media (min-width:720px) {
+  form {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  form .fieldset {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  form .field-group {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  form .checkbox-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+
+  form .checkbox-group label:not(:first-child) {
+    margin-left: 48px
+  }
+
+  form .radio-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+
+  form .radio-group label:not(:first-child) {
+    margin-left: 48px
+  }
+
+  body>header {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .background,
+  .background .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+  }
+
+  .background img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    max-width: none;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+
+  main {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  main>article {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  main>article>.inner {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .primary-navigation {
+    right: 25px;
+    left: 25px
+  }
+
+  .banner h1+h2 {
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.3333333333%;
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%
+  }
+
+  .banner h1+h2 br {
+    display: block
+  }
+
+  .banner p {
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.3333333333%;
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%
+  }
+
+  .banner p br {
+    display: block
+  }
+
+  ul.social-links li {
+    margin-left: 18px
+  }
+}
+
+@media (max-width:1139px) {
+
+  .primary-navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    max-width: 45vw;
+    padding: 40px 40px 40px 20px;
+    background: $default-header-background-color;
+    color: $default-white;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform .35s ease-out;
+    transition: -webkit-transform .35s ease-out;
+    transition: transform .35s ease-out;
+    transition: transform .35s ease-out, -webkit-transform .35s ease-out
+  }
+
+  .primary-navigation .menu a {
+    color: #fff
+  }
+
+  .primary-navigation .menu a:active,
+  .primary-navigation .menu a:focus,
+  .primary-navigation .menu a:hover {
+    color: #ff3d25
+  }
+
+  .primary-navigation .menu .toggle {
+    display: inline-block
+  }
+
+  .primary-navigation .menu.active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+
+  .primary-navigation .pages {
+    margin-bottom: auto;
+    margin-right: 12px
+  }
+
+  .primary-navigation .pages li {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    -webkit-transition: opacity .35s, visibility 0s .35s, -webkit-transform .35s ease-out;
+    transition: opacity .35s, visibility 0s .35s, -webkit-transform .35s ease-out;
+    transition: opacity .35s, transform .35s ease-out, visibility 0s .35s;
+    transition: opacity .35s, transform .35s ease-out, visibility 0s .35s, -webkit-transform .35s ease-out
+  }
+
+  .primary-navigation .pages li:first-child {
+    display: block
+  }
+}
+
+@media (min-width:1140px) {
+
+  .about-vue>main>header {
+    margin-left: 6%
+  }
+
+  .about-vue>main>article>.primary {
+    padding-bottom: 3%
+  }
+
+  .privacy-vue {
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 5%
+  }
+
+  .privacy-vue>main>header {
+    margin-top: 12%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+    margin-left: 0
+  }
+
+  form {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  form .fieldset {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  form .field-group,
+  form .legend {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .banner {
+    margin-top: 0;
+    height: calc(40vh - 55px)
+  }
+
+  .banner h1 br,
+  .banner h2 br {
+    display: block
+  }
+
+  .banner h1+h2,
+  .banner p {
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%
+  }
+
+  body>footer .inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px
+  }
+
+  body>footer .navs {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+
+  body>footer nav.site {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+
+  body>footer .social {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.3333333333%;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%
+  }
+
+  main {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0
+  }
+
+  main>article {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  main>article>.inner {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .primary-navigation .toggle {
+    display: none
+  }
+
+  .primary-navigation .pages {
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden
+  }
+
+  .primary-navigation .pages a {
+    padding: 10px
+  }
+
+  .primary-navigation .pages a:after {
+    left: 10px;
+    right: 10px;
+    bottom: 5px
+  }
+
+  .primary-navigation .pages .menu {
+    overflow: hidden
+  }
+
+  .primary-navigation .active-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+
+  .primary-navigation .social {
+    display: none
+  }
+}
+
+@media (min-width:1340px) {
+
+  .about .about-vue,
+  .privacy .about-vue {
+    padding-bottom: 4%
+  }
+
+  .about .about-vue main header,
+  .privacy .about-vue main header {
+    margin-left: 5.5%;
+    white-space: nowrap;
+    color: #efefef
+  }
+
+  .about .about-vue main article .primary,
+  .privacy .about-vue main article .primary {
+    padding-bottom: 1%
+  }
+
+  .about .about-vue main article .text .blockquote,
+  .privacy .about-vue main article .text .blockquote {
+    font-size: 3.4rem
+  }
+
+  .about .privacy-vue,
+  .privacy .privacy-vue {
+    padding-bottom: 4%
+  }
+
+  .about .privacy-vue main header,
+  .privacy .privacy-vue main header {
+    margin-left: 5.5%;
+    white-space: nowrap;
+    color: #efefef
+  }
+
+  .about .privacy-vue main article .primary,
+  .privacy .privacy-vue main article .primary {
+    padding-bottom: 1%
+  }
+
+  .about .privacy-vue main article .text .blockquote,
+  .privacy .privacy-vue main article .text .blockquote {
+    font-size: 3.4rem
+  }
+
+  .about .footer-vue,
+  .privacy .footer-vue {
+    position: fixed;
+    z-index: 0
+  }
+}
+
+@media (min-width:1440px) {
+  form {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  form .fieldset {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  body>header,
+  form .field-group,
+  main {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  main>article {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px
+  }
+
+  main>article>.inner {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .primary-navigation .pages a {
+    padding: 30px
+  }
+
+  .primary-navigation .pages a:after {
+    left: 30px;
+    right: 30px;
+    bottom: 20px
+  }
+
+  .banner h1+h2,
+  .banner p {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+}
+
+@media (max-height:320px) {
+  .primary-navigation .menu {
+    padding: 28px 60px
+  }
+}
+
+@media (max-width:539px) {
+  .privacy-vue>main>header {
+    margin-top: 20%;
+    margin-left: -6%
+  }
+
+  form .field-group[data-for=submit] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+
+  form .field-group[data-for=submit] button {
+    width: 100%;
+    min-width: 0;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+  }
+
+  form .field-group[data-for=submit] button:not(:first-child) {
+    margin-left: 18px
+  }
+
+  .banner {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  main>.banner {
+    padding-right: 0;
+    padding-left: 0
+  }
+}
+
+@media (orientation:portrait) and (max-height:823px) {
+  .primary-navigation {
+    margin-top: 1vh
+  }
+
+  .primary-navigation .menu {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+  }
+
+  .primary-navigation .pages {
+    margin-bottom: 9px;
+    min-height: 70vh
+  }
+
+  .primary-navigation .pages li {
+    max-height: 9vh
+  }
+
+  .primary-navigation .social li {
+    height: 20px
+  }
+
+  .about .about-vue main header {
+    margin-left: -6%;
+    margin-top: 8vh
+  }
+
+  .about .about-vue main article {
+    font-size: .9rem
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 25vh
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 1.05rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -6%;
+    margin-top: 8vh
+  }
+
+  .header-wrapper {
+    left: 10px;
+    right: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 250px;
+    height: 35px
+  }
+
+  .footer-vue #foot-logo {
+    display: none
+  }
+}
+
+@media only screen and (min-width:375px) and (max-width:812px) and (orientation:portrait) {
+  .about .about-vue main article .primary .image {
+    min-width: 22vh
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .about .about-vue main header {
+    margin-left: -2%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article {
+    font-size: 1rem
+  }
+
+  .about .about-vue main article .primary .text {
+    font-size: 1.4em
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -2.4%
+  }
+}
+
+@media only screen and (height:568px) and (width:320px) {
+  .privacy .privacy-vue main header {
+    margin-left: -7%
+  }
+
+  .privacy .privacy-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .privacy .privacy-vue main article .primary .text .blockquote {
+    font-size: .955rem
+  }
+
+  .about .about-vue main header {
+    margin-left: -7%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article {
+    font-size: .8rem
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: .955rem
+  }
+
+  .social {
+    text-align: center
+  }
+}
+
+@media only screen and (min-height:823px) and (max-width:411px) {
+  .about .about-vue main header {
+    margin-left: -5%;
+    margin-top: 12%
+  }
+
+  .about .about-vue main article {
+    font-size: .9rem
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 60%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 1.18rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -5.5%
+  }
+}
+
+@media only screen and (height:1112px) and (width:834px) {
+  .header-wrapper {
+    left: 10px;
+    right: 10px
+  }
+
+  .about .about-vue main header {
+    margin-left: -2.5%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article {
+    font-size: .9rem
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text {
+    font-size: 1.4rem
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2.293rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -3%
+  }
+
+  .privacy .footer-vue {
+    position: fixed
+  }
+}
+
+@media only screen and (orientation:landscape) and (max-height:414px) {
+  .about .about-vue main header {
+    margin-left: -3%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 1.9rem
+  }
+
+  .about .about-vue main article .primary .text .detail {
+    font-size: .6rem
+  }
+
+  .primary-navigation .menu {
+    min-height: 60vh;
+    padding: 20px 40px 40px 20px
+  }
+
+  .primary-navigation .menu .toggle {
+    top: 20px
+  }
+
+  .primary-navigation .pages {
+    min-height: 65vh;
+    max-height: 65vh
+  }
+
+  .primary-navigation .pages li {
+    max-height: 8.5vh
+  }
+
+  .primary-navigation .social ul {
+    height: 20px;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center
+  }
+}
+
+@media only screen and (orientation:landscape) and (height:320px) {
+  .header-wrapper {
+    top: 4px;
+    right: 10px;
+    left: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 280px;
+    height: 28px
+  }
+
+  .about .about-vue main header {
+    margin-left: -3%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 1.67rem
+  }
+
+  .about .about-vue main article .primary .text .detail {
+    font-size: .65rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -4%;
+    margin-top: 11%
+  }
+
+  .footer-vue {
+    right: 10px;
+    left: 10px
+  }
+
+  .footer-vue .social small {
+    display: none
+  }
+}
+
+@media only screen and (width:667px) and (height:375px) {
+  .header-wrapper {
+    top: 4px;
+    right: 10px;
+    left: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 300px;
+    height: 30px
+  }
+
+  .primary-navigation .menu {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+  }
+
+  .primary-navigation .pages {
+    margin-bottom: 10px
+  }
+
+  .primary-navigation .pages li {
+    max-height: 8.5vh
+  }
+
+  .primary-navigation .social li {
+    height: 20px
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -4%
+  }
+}
+
+@media only screen and (width:731px) and (height:411px) {
+  .header-wrapper {
+    top: 4px;
+    right: 10px;
+    left: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 350px;
+    height: 35px
+  }
+
+  .header-wrapper .initial {
+    min-height: 7vh
+  }
+
+  .about .about-vue main header {
+    margin-left: -2.5%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2.18rem
+  }
+
+  .about .about-vue main article .primary .text .detail {
+    font-size: .6rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -3%
+  }
+
+  .footer-vue {
+    right: 10px;
+    left: 10px;
+    bottom: 3px
+  }
+
+  .footer-vue .social small {
+    display: none
+  }
+}
+
+@media only screen and (width:736px) and (height:414px) {
+  .header-wrapper {
+    top: 4px;
+    right: 10px;
+    left: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 350px;
+    height: 35px
+  }
+
+  .header-wrapper .initial {
+    min-height: 7vh
+  }
+
+  .about .about-vue main header {
+    margin-left: -2.5%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2.1rem
+  }
+
+  .about .about-vue main article .primary .text .detail {
+    font-size: .6rem
+  }
+
+  .footer-vue {
+    right: 10px;
+    left: 10px;
+    bottom: 3px
+  }
+
+  .footer-vue .social small {
+    display: none
+  }
+}
+
+@media only screen and (width:812px) and (height:375px) {
+  .header-wrapper {
+    top: 4px;
+    right: 10px;
+    left: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 400px;
+    height: 33px
+  }
+
+  .header-wrapper .initial {
+    min-height: 8vh
+  }
+
+  .about .about-vue main header {
+    margin-left: -2.5%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2.4rem
+  }
+
+  .about .about-vue main article .primary .text .detail {
+    font-size: .6rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -3%
+  }
+
+  .footer-vue {
+    right: 10px;
+    left: 10px;
+    bottom: 3px
+  }
+
+  .footer-vue .social small {
+    display: none
+  }
+}
+
+@media only screen and (width:823px) and (height:411px) {
+  .header-wrapper {
+    top: 4px;
+    right: 10px;
+    left: 10px
+  }
+
+  .header-wrapper #head-logo {
+    width: 400px;
+    height: 33px
+  }
+
+  .header-wrapper .initial {
+    min-height: 8vh
+  }
+
+  .about .about-vue main header {
+    margin-left: -2.5%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2.3rem
+  }
+
+  .about .about-vue main article .primary .text .detail {
+    font-size: .6rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -2.6%
+  }
+
+  .footer-vue {
+    right: 10px;
+    left: 10px;
+    bottom: 3px
+  }
+
+  .footer-vue .social small {
+    display: none
+  }
+}
+
+@media only screen and (width:1024px) and (height:768px) {
+  .header-wrapper {
+    top: 5px
+  }
+
+  .footer-vue,
+  .header-wrapper {
+    left: 10px;
+    right: 10px
+  }
+}
+
+@media only screen and (width:1112px) and (height:834px) {
+  .header-wrapper {
+    top: 5px;
+    left: 10px;
+    right: 10px
+  }
+
+  .about .about-vue main header {
+    margin-left: -1.8%;
+    margin-top: 11%
+  }
+
+  .about .about-vue main article {
+    font-size: .9rem
+  }
+
+  .about .about-vue main article .primary .image {
+    min-width: 55%
+  }
+
+  .about .about-vue main article .primary .text {
+    font-size: 1.4em
+  }
+
+  .about .about-vue main article .primary .text .blockquote {
+    font-size: 2.5rem
+  }
+
+  .privacy .privacy-vue main header {
+    margin-left: -2%
+  }
+
+  .privacy .footer-vue {
+    position: fixed
+  }
+}
